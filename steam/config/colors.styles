@@ -1,0 +1,13 @@
+"colors.styles"
+
+{
+	colors
+
+	{
+		// Main-background
+		mbg="27 40 56 255"
+
+		// Sub-background
+		sbg="22 32 45 255"
+}
+}
