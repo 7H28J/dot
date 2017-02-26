@@ -60,7 +60,7 @@
 	{
 		CGamesListPanel
 		{
-			bgcolor="mbg"
+			bgcolor="none"
 		}
 
 		emptylisttext
@@ -72,22 +72,14 @@
 
 		CGamesPage_Details
 		{
-			bgcolor="mbg"
-			inset="0 0 0 1"
-			render
-						{
-						}
-			render_bg
-			{
-				 0="gradient( x0+2, y0+2, x1-1, y1 - 1, mbg, mbg )"
-				 //1="gradient( x0 +2, y0+2, x1-1, y0 + 20, mbg, mbg )"
-			}
+			bgcolor="sbg"
+			inset="0 0 0 0"
 		}
 
 		// Some overrides for our listpanel
 		"GamesPage_Details ListPanel"
 		{
-			bgcolor="mbg"
+			bgcolor="none"
 			render_bg {}
 			render {}
 		}
@@ -100,15 +92,15 @@
 		
 		"GamesPage_Details ListPanelInterior"
 		{
-			bgcolor="mbg"
-			inset="0 1 0 0"
+			bgcolor="none"
+			inset="1 1 0 0"
 			render {}
 			render_bg {} 
 		}
 		
 		"GamesPage_Details ListPanelInterior:scrollbar"
 			{     
-			inset="0 1 -2 0"
+			inset="1 1 -2 0"
 			bgcolor=none
 			
 			render_bg {}
@@ -167,6 +159,7 @@
 		}
 		
 		headerimage { bgcolor="0 0 0 0" }
+
 
 		rightcolumnheadertext
 		{
@@ -254,74 +247,43 @@
 		
 		DetailsBorderPanel
 		{
-			
-			bgcolor ="sbg"
-			render 
-			{
-				// background gradient
-
-
-
-
-			}
+			bgcolor ="none"
 		}
 	}
 
 	layout
 	{
-		region	{ name="list" y=2 x=1 width=275 height=max margin-bottom=0 }
-		region	{ name="details" y=1 x=275 width=max height=max overflow=scroll-vertical margin-left=1 margin-top=1 margin-bottom=1 margin-right=-1}
-		region	{ name="headertext" region=details y=20 x=5 width=max height=max margin-right=20 }
-		region	{ name="rightcolumn" region=details y=171 height=max width=1156 margin-right=0 margin-top=1 margin-bottom=1 overflow=allow-vertical }
-		region  { name="detailsbody" region=details y=174 height=max width=1156 margin-right=160 overflow=allow-vertical }
+		region	{ name="details" y=0 x=262 width=max height=max overflow=scroll-vertical margin-left=0 margin-right=-1 }
+ 
+		//List
+		place 	{ control=GamesList width=262 height=max margin=0 margin-top=-1 margin-bottom=-1 }
 
-		// Empty list text, which goes across regions
-		place	{ control=emptylisttext x=0 y=0 width=max height=max margin=10 }
-
-		// Games list on left
-		place 	{ control=GamesList region=list width=275 height=max margin=0 }
+		//Empty List Text 
+		place	{ control=emptylisttext x=262 margin-left=8 y=0 width=max height=max }
 		
-		// Body contents
-		place 
-		{ 
-			control=welcomedetails,rentaldetails,turnnotifications,friendsdetails,achievementsdetails,dlcdetails,clouddetails,communityfilesdetails,newsdetails,nonsteamdetails,screenshotsdetails
-			region=detailsbody
-			dir=down
-			width=max
-			margin-right=10
-			margin-top=0
-			margin-left=5
-			spacing=10
-			margin-bottom=10 
-		}
+		//Header
+		place 	{ control=gametitleheader region=details x=14 width=max align=left-center height=144 dir=down }
 
-		
-		// Details border
+		//Panels
+		region  { name="detailsbody" region=details y=144 width=max margin-right=170 overflow=allow-vertical }
+		place 	{ region=detailsbody control=gamesubheader,turnnotifications,friendsdetails,achievementsdetails,communityfilesdetails,screenshotsdetails,dlcdetails,clouddetails,newsdetails dir=down width=max margin-right=10 margin-left=10 margin-top=10 margin-down=5 spacing=0 }
+
+		//Sidebar
+		region	{ name="rightcolumn" region=details y=50 height=max width=max margin-right=8 overflow=allow-vertical }
+
+		place { control=linkslabel,sendguestpasslink,gamehublink,gamesubheaderright,achievementslink,forumlink,ogglink,manuallink,newslink,storelink,dlclink,cdkeylink,guidelink,guideslink,supportlink,recommendlink,tagslabel,*taglink,edittagslink region=rightcolumn dir=down width=150 margin-top=-12 margin=0 align=right spacing=10 }
+
+		//Background Images
+		place 	{ control=headerimageb align=left margin-left=o height=0 width=0 }
+		place 	{ control=headerimagea align=left margin-left=o height=0 width=0 }
+		//Height=550
+
+		//?
 		place 	{ control=DetailsBorder y=1 x=1 width=max height=max }
-
-		// Main header image is at the bottom, then one of three color overlays is visible, and finally the 
-		// horizontal fade out gradient on the top.  We have an a and a b image, which we crossfade between.
-		place 	{ control=headerimagea width=1024 height=550 x=120 y=2 }
-		place 	{ control=headerimageb width=1024 height=550 x=120 y=2 }
-
-		// Header text
-		place 	{ control=gametitleheader region=headertext dir=down height=46 }
-		place	{ control=gamesubheader start=gametitleheader region=headertext dir=down margin-top=10 }
 		
-		// Buttons and links on the right
-		place	
-		{ 
-			control=linkslabel,sendguestpasslink,gamehublink,achievementslink,forumlink,ogglink,manuallink,newslink,storelink,dlclink,cdkeylink,guidelink,guideslink,supportlink,recommendlink,tagslabel,*taglink,edittagslink
-			region=rightcolumn 
-			dir=down 
-			width=150 
-			margin=0
-			align=right
-			spacing=5 
+		//Hidden
+		region { name=hidden width=1 overflow=none }
+		place { controls=welcomedetails,nonsteamdetails region=hidden }
 
-		}
-
-		
 	}
-
 }

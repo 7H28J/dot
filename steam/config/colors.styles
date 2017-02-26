@@ -9,5 +9,8 @@
 
 		// Sub-background
 		sbg="22 32 45 255"
+
+		// dark bg?
+		dbg="24 31 39 255"
 }
 }
