@@ -677,13 +677,13 @@
 		
 		CUINavButtonNew
 		{
-			textcolor="133 176 223 255"
-			font-weight=800
+			textcolor="btc2"
+			font-weight=400
 		}
 		
 		CUINavButton [!$OSX]
 		{
-			textcolor="Labelfocus"
+			textcolor="btc2"
 			bgcolor="none"
 			font-family=basefont
 			font-size=24
@@ -695,7 +695,7 @@
 
 		CUINavButton [$OSX]
 		{
-			textcolor="Labelfocus"
+			textcolor="btc2"
 			bgcolor="none"
 			font-family=basefont
 			font-size=24
@@ -717,11 +717,7 @@
 		
 		CUINavButton:hover
 		{
-			textcolor="Text"
-			font-style="outerglow,uppercase"
-			font-outerglow-color="TextGlowHover"
-			font-outerglow-offset=1
-			font-outerglow-filtersize=5
+			textcolor="btc"
 		}
 
 		CUINavButton:disabled:hover
@@ -768,21 +764,13 @@
  				
 		CUINavButton2:hover
 		{
-			textcolor="text"
-			font-style="uppercase,outerglow"
-			font-outerglow-color="TextGlowHoverSm"
-			font-outerglow-offset=1
-			font-outerglow-filtersize=1
+			textcolor="btc"
 		}
 
 		CUINavButton2:selected 
 		{
 			textcolor="white"
 			bgcolor=none
-			font-style="uppercase,outerglow"
-			font-outerglow-color="TextGlowSelectedSm"
-			font-outerglow-offset=1
-			font-outerglow-filtersize=1
 		}
 
 		CUINavigatorPanel

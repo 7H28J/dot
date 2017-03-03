@@ -109,13 +109,13 @@
 		ListPanelSectionHeader
 		{     
 			inset="2 0 0 0"
-			textcolor=label
+			textcolor="lbt"
 			font-style="uppercase"
 			render_bg
 			{
-				0="gradient_horizontal( x0 - 1, y0, x0 + 250, y1 - 1, propertysheetbg, Friends.ListHeaderFadeOut  )"
+				//0="gradient_horizontal( x0 - 1, y0, x0 + 250, y1 - 1, propertysheetbg, Friends.ListHeaderFadeOut  )"
 			}    
-		} 
+		}
 
 		"GamesPage_Details ListPanelDragger"
 		{
@@ -247,7 +247,7 @@
 		
 		DetailsBorderPanel
 		{
-			bgcolor ="none"
+			bgcolor ="sbg"
 		}
 	}
 

@@ -4,13 +4,17 @@
 	colors
 
 	{
-		// Main-background
-		mbg="27 40 56 255"
+		
+		mbg="27 40 56 255" // main background
+		sbg="22 32 45 255" // sub background
 
-		// Sub-background
-		sbg="22 32 45 255"
+		btc="210 210 210 255" // base text color
+		btc2="143 152 160 255" // base text color 2
+		lbt="134 181 217 255" // light blue text
 
-		// dark bg?
-		dbg="24 31 39 255"
+		flb="134 181 217 255" // friends online blue
+		flg="140 179 89 255" // friends ingame green
+		// testing
+		dbg="24 31 39 255" // dark background
 }
 }

@@ -59,8 +59,8 @@ steam.styles
     ButtonBorderFocus="137 137 137 255"
     ButtonBorderFocusSubtle="122 122 122 255"
     
-    Text="207 207 207 255"
-    Text2="180 180 180 255"
+    Text="255 255 255 180"
+    Text2="255 255 255 180"
     TextDisabled="99 99 99 255"
     TextHover="226 226 226 255"
     TextSelected="239 239 239 255"
@@ -290,10 +290,10 @@ steam.styles
     
 
     // Friends List colors
-    Friends.InGameColor       "144 186 60 255"
-    Friends.InGameHoverColor  "182 235 76 255"
-    Friends.OnlineColor      "84 165 196 255"
-    Friends.OnlineHoverColor  "104 203 242 255"
+    Friends.InGameColor       "flg"
+    Friends.InGameHoverColor  "flg"
+    Friends.OnlineColor      "flb"
+    Friends.OnlineHoverColor  "flb"
     Friends.OfflineColor      "127 127 127 255"
     Friends.OfflineHoverColor "185 185 185 255"
     Friends.PanelDefault      "Label"
@@ -1042,7 +1042,7 @@ steam.styles
    
   "CFriendsDialog SectionedListPanelInterior"
   {
-    bgcolor=none
+    bgcolor="mbg"
     inset="-6 -1 -1 -1"
     font-family=basefont
     font-size=14
@@ -1395,11 +1395,11 @@ steam.styles
     
     "Csteamrootdialog ListPanelSectionCollapser"
   {
-    inset = "0 1 0 1"
+    inset = "0 0 0 0"
     bgcolor=none
     render_bg
     {
-      1="fill( x0 , y0, x1, y1 - 1, propertysheetbg  )"
+      //1="fill( x0 , y0, x1, y1 - 1, propertysheetbg  )"
     }    
   }
   
@@ -2226,12 +2226,12 @@ steam.styles
     
     ScrollBarHandle  //vertical scrollbar thumb
     {
-    bgcolor="mbg"
+    bgcolor=none
     //image="graphics/icon_scroll_handle"
     render_bg 
     {
       // center fill
-      //0="fill( x0 + 2, y0 + 6, x1 - 4, y1 - 5, ButtonFace )"
+      0="fill( x0 + 2, y0 + 6, x1 - 4, y1 - 5, mbg )"
     }
     }
        
@@ -2241,7 +2241,7 @@ steam.styles
     render_bg 
     {
       // center fill
-      //0="fill( x0 + 2, y0 + 6, x1 - 4, y1 - 5, ButtonFaceActive )"
+      0="fill( x0 + 2, y0 + 6, x1 - 4, y1 - 5, mbg )"
     }
     }
     
@@ -2251,7 +2251,7 @@ steam.styles
     render_bg 
     {
       // center fill
-      //0="fill( x0 + 2, y0 + 6, x1 - 4, y1 - 5, ButtonFaceActive )"
+      0="fill( x0 + 2, y0 + 6, x1 - 4, y1 - 5, mbg )"
     }
     }
     
@@ -2296,7 +2296,7 @@ steam.styles
     {
 
       //background fill
-      2="gradient( x0 + 2, y0 + 6, x1 - 4, y0 + 200, scrollbg, none)"
+      2="gradient( x0 + 2, y0 + 6, x12 - 10, y0 + 200, none, none)"
     }
     }
     
@@ -2310,8 +2310,8 @@ steam.styles
    
     "GamesPage_Details ListPanel ScrollBarSlider" // gutter in games list detail view 
     {
-    bgcolor="sbg"
-    inset="4 4 4 4"
+    bgcolor="none"
+    inset="0 0 0 0"
     render{ }
     render_bg
     {}
@@ -2386,7 +2386,7 @@ steam.styles
     
     "CFriendsDialog SectionedListPanel"
     {
-      bgcolor="none"
+      bgcolor="mbg"
       font-family=basefont
       font-size=14
       font-weight=400
@@ -2397,8 +2397,8 @@ steam.styles
       render_bg 
       {
         // background fill
-        0="gradient( x0, y0, x1, y0 + 140, dialogbg, almostblack )"
-        1="fill( x0, y0 + 140, x1, y1, almostblack )"       
+        0="gradient( x0, y0, x1, y0 + 140, none, none )"
+        1="fill( x0, y0 + 140, x1, y1, none )"       
       }    
     }
     
@@ -3405,12 +3405,13 @@ steam.styles
     }
     
     ChatListPanel
-    { 
+    {
+    bgcolor="mbg" 
     render {}
 
     render_bg
       {
-             0="gradient( x0, y0, x1 -16, y1, darkdialogbg, almostblack )"
+             //0="gradient( x0, y0, x1 -16, y1, darkdialogbg, almostblack )"
       }
     }
       
