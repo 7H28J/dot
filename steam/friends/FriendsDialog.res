@@ -162,34 +162,7 @@
 			{
 				//1="image( x0, y0, x1, y1, graphics/clienttexture2)"
 			}
-		}	
-		
-		AddFriendsButton 
-		{
-			font-family=basefont
-			font-size=14
-			font-size=13 [$OSX]
-			font-weight=400
-			padding-left=15
-			padding-right=0
-			textcolor="labelfocus"
-			bgcolor=none  
-			
-			render_bg 
-			{
-				1="image( x0, y0 + 4, x0 + 200, y1, graphics/icon_collapse )"
-			}
-		}
-		   
-
-		AddFriendsButton:hover
-		{
-			textcolor="white"
-			render_bg
-			{
-				0="image( x0, y0 + 4, x1, y1, graphics/icon_collapse_over )"
-			}
-		}	  	
+		}		
 		
 		RootMenu
 		{
@@ -354,17 +327,17 @@
  		// the title bar is missing, so increase the size of the grip
 		place { control="frame_captiongrip" margin=2 width=max height=100 }
 		place [!$OSX] { control="MenuBar" margin-left=0 height=24 margin-top=2 }
-		
-	
-		
 
-		place { control="FriendPanelSelf" y=24 align=left margin-left=7 margin-right=7 margin-top=2 margin-bottom=38 dir=right spacing=3 }	
-		place { control="friends_search_icon" margin-left=-2 start=FriendPanelSelf dir=down margin-top=5 }
-		place { control="friends_search" start=friends_search_icon dir=right margin-right=9 y=-2 margin-bottom=38 width=max }
-		place { control="FriendsDialogSheet" start=friends_search_icon margin-left=2 dir=down width=max height=max spacing=3 margin-top=2 margin-bottom=38 margin-right=7 }	
-		place { control="addFriendsButton" align=bottom margin-left=16 margin-right=9 margin-bottom=7 height=24 }
+
+
+
+		place { control="FriendPanelSelf" y=24 align=left margin-left=7 margin-right=100 margin-top=2 margin-bottom=38 dir=right spacing=3 }
+		place { control="friends_search_icon" margin-left=-30 start=FriendPanelSelf dir=down margin-top=5 }
+		place { control="friends_search" start=friends_search_icon dir=right margin-right=2 margin-left=2 y=-2 margin-bottom=38 width=max }
+		place { control="FriendsDialogSheet" start=friends_search_icon margin-left=2 dir=down width=max height=max spacing=3 margin-top=2 margin-bottom=10 margin-right=7 }
+		place { control="addFriendsButton" align=bottom margin-left=-400 }
  	}
- 	
+
 }
 
 

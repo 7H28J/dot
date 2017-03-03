@@ -16,10 +16,10 @@
 		{
 			minimum-width="740"
 			minimum-height="585"
-			bgcolor=dialogbg
+			bgcolor="mbg"
 			render_bg
 			{     
-      	 0="gradient_horizontal( x0 + 10, y0 + 32, x1 - 10, y0 + 33, ButtonBorderDisabled, propertysheetbg )"     
+      	 		0="gradient_horizontal( x0 + 10, y0 + 32, x1 - 10, y0 + 33, mbg, mbg )"     
 			}
 
 		}
@@ -50,7 +50,7 @@
 		inset="3 0 0 0"
 		font-size=14
 		textcolor="text2"
-		bgcolor="BlueBG" 
+		bgcolor="mbg" 
    		 render
 			{}
 		render_bg 
