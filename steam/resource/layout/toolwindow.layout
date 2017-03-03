@@ -12,7 +12,7 @@
 
 		Panel
 		{
-			bgcolor="mbg"
+			bgcolor="none"
 		}
 
 		ToolWindow

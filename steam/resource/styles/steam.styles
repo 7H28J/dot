@@ -38,7 +38,7 @@ steam.styles
     // cool we can define font-families here as well
     basefont="Segoe UI"
     basefont2="Segoe UI Semilight"
-    basefont="Helvetica" [$OSX]
+    basefont="Segoe UI" [$OSX]
     
     // new control colors
     ButtonFace="102 102 102 200"
@@ -496,12 +496,10 @@ steam.styles
       font-size=14
       font-size=13 [$OSX]
       font-weight=400
-      textcolor="texthover"
+      textcolor="lbt"
       inset="0 2 0 0"
       render_bg
-      {
-        0="gradient_horizontal( x0-21, y0+1, x0+230, y1+1, propertysheetbg, Friends.ListHeaderFadeOut )"
-      }
+      {}
     }
             
     CFriendPanel
@@ -1700,7 +1698,7 @@ steam.styles
       
     MenuBar
     {
-    bgcolor=dialogbg
+    bgcolor="mbg"
     padding-right=1
     padding-left=6
     padding-top=2
@@ -1714,19 +1712,19 @@ steam.styles
     
   "MenuBar MenuButton" 
   {
-    textcolor="buttonborder"
+    textcolor="btc2"
     padding-right=-2
     inset="-2 0 2 0"
   }
   
   "MenuBar MenuButton:frameFocus" 
   {
-    textcolor="labeldisabled"
+    textcolor="btc2"
   }
   
   "MenuBar MenuButton:frameFocus:hover" 
   {
-    textcolor="texthover"
+    textcolor="btc"
     bgcolor=none
     render_bg
       {    
@@ -1735,7 +1733,7 @@ steam.styles
   
   "MenuBar MenuButton:frameFocus:selected" 
   {
-    textcolor="texthover"
+    textcolor="btc"
     bgcolor=none
     render_bg
       {    
@@ -1747,10 +1745,10 @@ steam.styles
       font-family=basefont
       font-size=14
       font-weight=400
-      textcolor="scrollglyph"
       bgcolor="none"
       render_bg {}
-    }  
+
+    }
    
   MenuButton:hover
     {
@@ -1847,24 +1845,21 @@ steam.styles
       
     PageTab
     {
-    textcolor="Label"
+    textcolor="btc2"
     font-family=basefont
     font-size=13
     font-style=Uppercase
     font-weight=400
     inset="0 -2 0 0"
+    bgcolor="sbg"
     render_bg
-    {
-      // background gradient
-      0="fill( x0, y0 , x1, y1 - 4, PropertySheetBG )"
-      1="fill(x0, y1-2, x1+3000, y1 -1, divider )"    
-    }
+    {}
     }
 
     
     PageTab:selected
     {
-    textcolor="texthover"
+    textcolor="btc"
     font-family=basefont
     font-size=13
     font-style=Uppercase
@@ -1874,31 +1869,28 @@ steam.styles
     render_bg
       {
         // background gradient
-        0="gradient( x0, y0 , x1, y1, divider, dialogbg )"
-        1="fill(x1, y1-2, x1+3000, y1 - 1, divider )"
+        1="gradient( x0, y0 , x1, y1 - 2, bfd, bfl )"
+
       }
     }
 
     
-  PageTab:hover
+    PageTab:hover
     {
-    textcolor="texthover"
+    textcolor="btc"
     font-family=basefont
     font-size=13
     font-style=Uppercase
     font-weight=400
     inset="0 -2 0 0"
+    bgcolor="bfd"
     render_bg
-      {
-        // background gradient
-        0="fill( x0, y0 , x1, y1 - 4, buttonfacehover )"
-        1="fill(x0, y1-2, x1+3000, y1 -1, divider )"
-      }
+    {}
     }
   
     PageTab:selected:hover
     {
-    textcolor="texthover"
+    textcolor="btc"
     font-family=basefont
     font-size=13
     font-style=Uppercase
@@ -1908,8 +1900,8 @@ steam.styles
     render_bg
       {
         // background gradient
-        0="gradient( x0, y0 , x1, y1, divider, dialogbg )"
-        1="fill(x1, y1-2, x1+3000, y1 - 1, divider )"
+        1="gradient( x0, y0 , x1, y1 - 2, bfd, bfl )"
+
       }
     }
       

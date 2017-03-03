@@ -619,10 +619,10 @@
 		{
 			bgcolor="none"
 			textcolor="label"
-			inset="0 0 0 0"
+			inset="1 1 1 1"
 			render_bg
 			{
-				0="fill( x0, y0, x1, y1, none )" // bg
+				0="fill( x0, y0, x0, y0, none )" //  x0, y0, x1, y1
 			}
 		}
 		
@@ -667,7 +667,7 @@
 		
 		"CSteamRootDialog TextEntryURL"
 		{
-			textcolor="101 101 101 255"		
+			textcolor="lbt"		
 		}
 		
 		"CSteamRootDialog TextEntryURL:hover"
@@ -857,7 +857,9 @@
 
 		place { control="subnavgroup_library" align=top-center y=50 height=28 width=max margin-right=-2 margin-left=8 }
 		
-		place { control="refresh,stop,URLStatusImage,EVCert,URLBar" align=left y=54 height=20 width=max spacing=1 margin-left=9 }
+		place { control="URLStatusImage,EVCert,URLBar" align=left y=54 height=20 width=max spacing=1 margin-left=9 }
+		place { control="URLBar" align=left y=54 height=20 width=max spacing=1 margin-left=5 }
+		place { control="refresh,stop" align=left y=54 height=20 width=max spacing=1 margin-left=-40 }
  	
 		place { control="library_search"  width=112 }	
 
@@ -880,16 +882,16 @@
 			
 		place { control="library_filters_details,library_filters_list,library_filters_grid," align=right y=54 height=20 spacing=4 margin-right=9 width=20 }
 
- 	  	place { control=emailreminderbar margin-top=81 margin-left=8 margin-right=8 width=max height=48 }
- 	  	place { control=phonereminderbar margin-top=81 margin-left=8 margin-right=8 width=max height=80 }
+ 	  	place { control=emailreminderbar margin-top=81 margin-left=0 margin-right=0 width=max height=48 }
+ 	  	place { control=phonereminderbar margin-top=81 margin-left=0 margin-right=0 width=max height=80 }
 
 		// content pages - these are all pushed down by the email reminder bar (above) if it's visible
 		place { control=DownloadsPage 		width=max height=max margin-top=0 margin-left=0 margin-right=8 margin-bottom=20 start=phonereminderbar dir=down }
 		place { control=ScreenshotsPage 	width=max height=max margin-top=0 margin-left=0 margin-right=8 margin-bottom=20 start=phonereminderbar dir=down }
-		place { control=GamesPage_List		width=max height=max margin-top=0 margin-left=0 margin-right=9 margin-bottom=21 start=phonereminderbar dir=down }
+		place { control=GamesPage_List		width=max height=max margin-top=0 margin-left=0 margin-right=0 margin-bottom=21 start=phonereminderbar dir=down }
 		place { control=GamesPage_Details 	width=max height=max margin-top=0 margin-left=0 margin-right=9 margin-bottom=21 start=phonereminderbar dir=down }
 		place { control=GamesPage_Grid 		width=max height=max margin-top=0 margin-left=0 margin-right=9 margin-bottom=20 start=phonereminderbar dir=down }
-		place { control=WebPanel 			width=max height=max margin-top=0 margin-left=0 margin-right=9 margin-bottom=21 start=phonereminderbar dir=down }
+		place { control=WebPanel 			width=max height=max margin-top=0 margin-left=0 margin-right=0 margin-bottom=21 start=phonereminderbar dir=down }
 		place { control=BroadcastPage			width=max height=max margin-top=0 margin-left=0 margin-right=9 margin-bottom=21 start=phonereminderbar dir=down }
 		place { control=BroadcastPageMin		width=300 height=168 margin-top=0 margin-left=0 margin-right=30 margin-bottom=26 dir=down align=bottom-right }
 		place { control=BroadcastPageMinHoriz	width=300 height=168 margin-top=0 margin-left=0 margin-right=30 margin-bottom=40 dir=down align=bottom-right }
