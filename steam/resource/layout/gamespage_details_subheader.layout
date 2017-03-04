@@ -10,7 +10,7 @@
 	colors
 	{
 		GameDetailsSubHeader.HorizontalSpacing=10
-		GameDetailsSubHeader.VerticalMargin=10
+		GameDetailsSubHeader.VerticalMargin=20
 	}
 
 	styles

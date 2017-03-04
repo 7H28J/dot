@@ -812,25 +812,15 @@ steam.styles
    Frame
     {
     bgcolor="mbg"
-      render
-      {
-        0="fill_horizontal( x0, y1 - 1, x1 + 1, y1, mbg, mbg )"
-        1="fill( x1 - 1, y0, x1, y1, mbg, mbg )"
-        2="fill( x0, y0, x1, y0 + 1, mbg )"
-        3="fill( x0, y0, x0 + 1, y1, mbg )"
-      }
+    render
+    {}
     }
 
     Frame:FrameFocus
     {
     bgcolor="mbg"
-      render
-      {
-        0="fill_horizontal( x0, y1 - 1, x1 + 1, y1, mbg, mbg )"
-        1="fill( x1 - 1, y0, x1, y1, mbg, mbg )"
-        2="fill( x0, y0, x1, y0 + 1, mbg )"
-        3="fill( x0, y0, x0 + 1, y1, mbg )"
-      }
+    render
+    {}
     }
     
     FrameBRGripPanel

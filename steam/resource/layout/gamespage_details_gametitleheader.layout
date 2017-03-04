@@ -23,7 +23,7 @@
 			padding-bottom=5
 			padding-top=5
 			font-size=48
-			textcolor=Text
+			textcolor="lbt"
 			font-family=basefont2
 			font-weight=100 
 			bgcolor=none

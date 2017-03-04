@@ -32,7 +32,7 @@
 	{
 		achievementsdetails 
 		{ 
-			bgcolor="none"
+			bgcolor="50 73 101 50"
 		}
 
 		everythinglabel
