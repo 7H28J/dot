@@ -101,10 +101,7 @@
 			render_bg
 			{
 				// lines around
-				0="fill( x0, y0, x0 + 1, y1, ButtonBorderDisabled )"
-				1="fill(  x1 - 1, y0 + 1, x1, y1 - 1, ButtonBorderDisabled )"
-				2="fill( x0 + 1, y0, x1, y0 + 1, ButtonBorderDisabled )"
-				3="fill( x0, y1 - 1, x1, y1, ButtonBorderDisabled )"	
+				1="gradient( x0 + 1, y0 + 1, x1 - 1, y1 - 1, sbg, sbg )"	
 			}
 		}
 
@@ -169,7 +166,8 @@
 		region { name="chathistorybottom" y=60 margin-left=8 margin-right=8 width=max height=234 align=bottom margin-bottom=74 }
 
 		region { name=bottomrow align=bottom height=76 }
-		place { control="EmoticonButton,SendButton" region=bottomrow spacing=8 height=42 align=right margin-top=8 margin-right=8 }
+		place { control="EmoticonButton" region=bottomrow spacing=8 height=42 align=right margin-top=8 margin-right=8 }
+		place { control=SendButton height=0 width=0 }
 		place { control="TextEntry" region=bottomrow end-right="EmoticonButton" height=42 width=max margin-right=8 margin-right=8 margin-left=-5 margin-top=8 }
 		place { control="StatusLabel" region=bottomrow align=bottom width=max margin-left=0 margin-bottom=7 }
 	}

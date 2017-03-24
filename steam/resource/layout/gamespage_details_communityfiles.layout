@@ -19,7 +19,7 @@
 	{
 		communityfilesdetails 
 		{ 
-			bgcolor="none"
+			bgcolor="mbg"
 		}
 		
 		infolabel

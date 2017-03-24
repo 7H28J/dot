@@ -229,8 +229,8 @@ steam.styles
     Notifications.PanelPosition     "BottomRight"   // Can be "BottomRight", "BottomLeft", "TopRight", "TopLeft"
     Notifications.PanelPosition     "TopRight" [$OSX]  // the dock is on the bottom for OSX, so instead pop top right like other apps do
     Notifications.SlideDirection    "Vertical"    // Can be "Vertical", "Horizontal", "None" and controls slide effect
-    Notifications.FadeInTime      "0.45"    // Controls the time it takes to slide/fade into view
-    Notifications.FadeOutTime     "0.45"    // Controls the time it takes to slide/fade out of view
+    Notifications.FadeInTime      "0.75"    // Controls the time it takes to slide/fade into view
+    Notifications.FadeOutTime     "0.75"    // Controls the time it takes to slide/fade out of view
     Notifications.DisplayTime     "6.0"     // Controls the length of time at steady state after fade in and before fade out
     Notifications.StackSize       "3"     // Controls how many panels we will stack before background queuing
 
@@ -264,7 +264,7 @@ steam.styles
     RichText.InsetX         8
     RichText.InsetY         7
 
-    ScrollBar.Wide          18
+    ScrollBar.Wide          14
     
     SectionedListPanel.CollapserWidth   16
     
@@ -445,9 +445,11 @@ steam.styles
     {
       textcolor="TextHover"
       render_bg
-      {     
+      {
         // background fill
-        0="gradient( x0, y0, x1, y1, buttonfaceactivefocus, propertysheetbg )"
+        1="gradient( x0 + 1, y0 + 1, x1 - 1, y1 - 1, bfd, bfl )"
+
+
       }
     }
 
@@ -463,22 +465,20 @@ steam.styles
     
     Button:disabled
     {
-      textcolor="LabelDisabled"
-      render_bg
-      {     
-        // background fill
-        0="gradient( x0, y0, x1, y1, buttonfacedisabled, buttonfacedisabled )"             
-      }
+      textcolor="btc2"
     }   
     
-    "Page Button:disabled"
-    {     
-      textcolor="LabelDisabled"
+    Button:disabled
+    {
+      textcolor="btc2"
       render_bg
       {
         // background fill
-        0="gradient( x0, y0, x1, y1, buttonfacedisabled, buttonfacedisabled )"             
-      }   
+        1="gradient( x0 + 1, y0 + 1, x1 - 1, y1 - 1, bfd, bfd )"
+
+
+
+      }
     }
        
     CFriendsListSectionAffordance
@@ -2862,24 +2862,15 @@ steam.styles
     // Steam-specific styles
     CConsoleHistory
     {
-      font-family="Lucida Console"
-      font-size=9
+      bgcolor="sbg"
+      font-family="basefont"
+      font-size=16
       font-family="DejaVu Sans Mono" [$LINUX]
-      font-size=12 [$LINUX]
+      font-size=16 [$LINUX]
       font-family="Menlo" [$OSX]
-      font-size=14 [$OSX]
-      textcolor="label"
-      selectedtextcolor="TextSelected"
-      
-      render
-      {       
-
-      }
-      render_bg 
-      {       
-        // background gradient        
-        1="gradient( x0, y0, x1, y1, dialogbg, almostblack )"
-      }
+      font-size=16 [$OSX]
+      textcolor="btc"
+      selectedtextcolor="lbt"
     }
     
     GameColumnHeaderFavorites
