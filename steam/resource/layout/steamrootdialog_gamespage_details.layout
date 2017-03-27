@@ -178,7 +178,7 @@
 			inset="-9 0 0 0"
 			font-style=uppercase;
 			font-size=17
-			textcolor=GameDetailsRed
+			textcolor=lbt
 			font-family=basefont
 			font-weight=700
 			padding-top=12
@@ -191,7 +191,7 @@
 			inset="-9 0 0 0"
 			font-style=uppercase;
 			font-size=17
-			textcolor=GameDetailsGreen
+			textcolor=lbt
 			font-family=basefont
 			font-weight=700
 			padding-top=12
@@ -203,7 +203,7 @@
 			inset="-9 0 0 0"
 			font-style=uppercase;
 			font-size=17
-			textcolor=GameDetailsBlue
+			textcolor=lbt
 			font-family=basefont
 			font-weight=700
 			padding-top=12
@@ -216,7 +216,7 @@
 			font-size=15
 			inset="-9 0 0 0"
 			font-style=normal
-			textcolor=Text
+			textcolor=btc
 			font-family=basefont
 			padding-left=10
 			padding-top=0
@@ -225,7 +225,7 @@
 
 		rightcolumnlink:hover
 		{
-			textcolor=White
+			textcolor=btc
 		}
 
 		rightcolumnlink:disabled
@@ -269,7 +269,7 @@
 		place 	{ region=detailsbody control=gamesubheader,turnnotifications,friendsdetails,achievementsdetails,communityfilesdetails,screenshotsdetails,dlcdetails,clouddetails,newsdetails dir=down width=max margin-right=10 margin-left=2 margin-top=10 margin-down=5 spacing=0 }
 
 		//Sidebar
-		region	{ name="rightcolumn" region=details y=225 height=max width=max margin-right=8 overflow=allow-vertical }
+		region	{ name="rightcolumn" region=details y=250 height=max width=max margin-right=8 overflow=allow-vertical }
 
 		place { control=linkslabel,sendguestpasslink,gamehublink,gamesubheaderright,achievementslink,forumlink,ogglink,manuallink,newslink,storelink,dlclink,cdkeylink,guidelink,guideslink,supportlink,recommendlink,tagslabel,*taglink,edittagslink region=rightcolumn dir=down width=150 margin-top=-12 margin=0 align=right spacing=10 }
 

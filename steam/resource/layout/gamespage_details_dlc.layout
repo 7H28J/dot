@@ -51,6 +51,34 @@
 			padding-top=3
 			minimum-width=256
 		}
+		
+		"Csteamrootdialog ListPanelColumnheader"
+		{
+			font-family=basefont
+			font-size=14
+			font-weight=400
+			textcolor="white"
+			font-style="uppercase"
+			bgcolor="none"
+			inset="0 0 0 0"
+			padding-top=1
+		render_bg    
+		{
+			// fill
+			0="fill (x0, y0 + 1, x1, y1, blb1 )" // bg fill
+		}   
+		}
+		
+		button
+		{
+		
+			textcolor="white"
+				
+			render_bg
+			{
+				0="gradient( x0, y0+1, x1, y1-1, bfd, bfl )"
+			}
+		}
 	}
 
 	layout

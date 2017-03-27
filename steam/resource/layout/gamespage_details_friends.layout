@@ -13,7 +13,7 @@
 
 	colors
 	{
-		GameDetailsFriends.ExtraVerticalSpacing=100	
+		GameDetailsFriends.ExtraVerticalSpacing=75	
 	}
 
 	styles
@@ -27,8 +27,24 @@
 		infolabel
 		{
 			font-size=16
-			textcolor=Label
-		}	
+			textcolor="white"
+		}
+		
+		Label
+		{
+			fontcolor="white"
+		}
+
+		button
+		{
+		
+			textcolor="white"		
+		
+			render_bg
+			{
+			0="gradient( x0, y0+1, x1, y1-1, blb1, bdb2 )"
+			}
+		}
 		
 		friendlabelmore
 		{

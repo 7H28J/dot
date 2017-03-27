@@ -39,7 +39,18 @@
 		{
 			textcolor="Text"
 			font-size=15
-		}	
+		}
+
+		button
+		{
+		
+			textcolor="white"
+				
+			render_bg
+			{
+				0="gradient( x0, y0+1, x1, y1-1, blb1, bdb2 )"
+			}
+		}
 
 	}
 

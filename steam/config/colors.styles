@@ -16,8 +16,8 @@
 		bfd="75 103 45 255" // button dark green
 		blb="103 193 245 255" // button light blue active
 		bdb="65 122 155 255" // button dark blue active
-		blb1="103 193 245 155" // button light blue inactive
-		bdb2="65 122 155 155" // button dark blue inactive
+		blb1="103 193 245 100" // button light blue inactive
+		bdb2="65 122 155 100" // button dark blue inactive
 
 		flb="134 181 217 255" // friends online blue
 		flg="140 179 89 255" // friends ingame green
