@@ -10,7 +10,7 @@
 	colors
 	{
 		GameDetailsSubHeader.HorizontalSpacing=10
-		GameDetailsSubHeader.VerticalMargin=20
+		GameDetailsSubHeader.VerticalMargin=30
 	}
 
 	styles
@@ -156,7 +156,7 @@
 			render_bg
 			{
 				// background fill
-				0="gradient( x0, y0+1, x1, y1-1, launch1, launch2 )"
+				0="gradient( x0, y0+1, x1, y1-1, bfd, bfl )"
 
 
 			}	
@@ -244,7 +244,7 @@
 			render_bg
 			{
 				// background fill
-				0="gradient( x0, y0+1, x1, y1-1, launch1, launch2 )"
+				0="gradient( x0, y0+1, x1, y1-1, blb1, bdb2 )"
 
 
 			}	

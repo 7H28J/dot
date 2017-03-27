@@ -50,7 +50,7 @@
 	{
 		panelStyle
 		{
-			bgcolor="none"
+			bgcolor=none
 			
 		}
 		

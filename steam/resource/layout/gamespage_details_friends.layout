@@ -13,7 +13,7 @@
 
 	colors
 	{
-		GameDetailsFriends.ExtraVerticalSpacing=75	
+		GameDetailsFriends.ExtraVerticalSpacing=100	
 	}
 
 	styles

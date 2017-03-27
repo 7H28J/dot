@@ -1,4 +1,4 @@
-"friends/CmptChatRoomDlgFriend.res"
+"friends/ChatRoomDlgFriend.res"
 {
 	controls
 	{
@@ -70,9 +70,7 @@
 	
 		label
 		{
-		font-size=13
-		font-weight=400
-		textcolor=lbt
+		font-size=14
 		}
 		
 		controlbutton
@@ -126,7 +124,7 @@
 		EmoticonMenuItemStyle:hover
 		{
 			textcolor=white
-			bgcolor=nonef
+			bgcolor=none
 		}
 		
 		EmoticonMenuItemStyle:selected
@@ -158,19 +156,19 @@
 	
 	layout
 	{
-		place { control="VoiceChat,ChatActionsButton" y=0 width=0 margin-right=8 align=right spacing=0 dir=right }
-		place { control="TitlePanel" margin-left=-3 y=2 height=-50 width=max margin-right=0 end-right=VoiceChat }
+		place { control="VoiceChat,ChatActionsButton" y=6 width=36 margin-right=8 align=right spacing=8 dir=right }
+		place { control="TitlePanel" margin-left=-3 y=2 height=50 width=max margin-right=0 end-right=VoiceChat }
 		place { control="VoiceBar" y=34 height=24 width=max margin-left=8 margin-right=52 }
 		place { control="GameInviteBar,TradeInviteBar,ChatInfoBar,BIBar,BABar" height=54 }
 
-		place { control="TradeInviteBar,GameInviteBar,ChatInfoBar,BIBar,BABar,ChatHistory" y=10 margin-left=-5 margin-right=-5 width=max height=max align=right dir=down margin-bottom=74 spacing=3 }
+		place { control="TradeInviteBar,GameInviteBar,ChatInfoBar,BIBar,BABar,ChatHistory" y=60 margin-left=-5 margin-right=-5 width=max height=max align=right dir=down margin-bottom=74 spacing=3 }
 
 		region { name="chathistorybottom" y=60 margin-left=8 margin-right=8 width=max height=234 align=bottom margin-bottom=74 }
 
 		region { name=bottomrow align=bottom height=76 }
-		place { control="EmoticonButton" region=bottomrow spacing=8 height=0 align=right margin-top=8 margin-right=8 }
+		place { control="EmoticonButton" region=bottomrow spacing=8 height=42 align=right margin-top=8 margin-right=8 }
 		place { control=SendButton height=0 width=0 }
-		place { control="TextEntry" region=bottomrow height=42 width=max margin-right=0 margin-right=8 margin-left=-5 margin-top=8 }
+		place { control="TextEntry" region=bottomrow end-right="EmoticonButton" height=42 width=max margin-right=8 margin-right=8 margin-left=-5 margin-top=8 }
 		place { control="StatusLabel" region=bottomrow align=bottom width=max margin-left=0 margin-bottom=7 }
 	}
 }

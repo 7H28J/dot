@@ -5,7 +5,7 @@
 */
 ::-webkit-scrollbar,
 ::-webkit-scrollbar-corner {
-	max-width: 14px;
+	max-width: 16px;
 	max-height: 10px;
 	min-width: 13px;
 	min-height: 10px;

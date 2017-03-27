@@ -264,7 +264,7 @@ steam.styles
     RichText.InsetX         8
     RichText.InsetY         7
 
-    ScrollBar.Wide          14
+    ScrollBar.Wide          18
     
     SectionedListPanel.CollapserWidth   16
     
@@ -1918,13 +1918,14 @@ steam.styles
     }
     
     Panel
-  { 
-    font-family=basefont
-    font-size=14
-    font-weight=400
-    textcolor="Text"
-    bgcolor="none"
-  }
+	{
+		font-family=basefont
+		font-size=14
+		font-weight=400
+		width="max"
+		textcolor="Text"
+		bgcolor=none
+    }
           
     ProgressBar
     {
@@ -2426,7 +2427,7 @@ steam.styles
       font-family=basefont
       font-size=14
       font-weight=400
-      textcolor="labelfocus"
+      textcolor="lbt"
       font-style=uppercase   
     }
     
@@ -2435,7 +2436,7 @@ steam.styles
       font-family=basefont
       font-size=14
       font-weight=400
-      textcolor="TextDisabled"
+      textcolor="lbt"
       font-style=normal   
     }
 
@@ -3299,11 +3300,11 @@ steam.styles
     font-weight=1000
   }
 
-  friends_chat_url
+  friends_chat_url // Chat Links Color
   {
-    textcolor="text"
-      SelectedBgColor="focus"
-    font-style=underline
+    textcolor="white"
+    SelectedBgColor="focus"
+    font-style=normal
     font-size=16
     selectedtextcolor="TextentrySelected"
     selectedbgcolor="focus"
@@ -3384,7 +3385,7 @@ steam.styles
 
     render_bg
       {
-             //0="gradient( x0, y0, x1 -16, y1, darkdialogbg, almostblack )"
+             0="gradient( x0, y0, x1 -16, y1, mbg, mbg )"
       }
     }
       

@@ -687,8 +687,8 @@
 			textcolor="btc2"
 			bgcolor="none"
 			font-family=basefont
-			font-size=28
-			font-weight=200 
+			font-size=24
+			font-weight=500
 			font-style="uppercase"
 			padding-left=5
 			padding-right=5

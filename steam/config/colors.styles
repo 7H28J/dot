@@ -11,14 +11,18 @@
 		btc="210 210 210 255" // base text color
 		btc2="143 152 160 255" // dark base text color
 		lbt="134 181 217 255" // light blue text
-
-		bfl="108 149 65 255" // button face light
-		bfd="75 103 45 255" // button face dark
+		
+		bfl="108 149 65 255" // button light green
+		bfd="75 103 45 255" // button dark green
+		blb="103 193 245 255" // button light blue active
+		bdb="65 122 155 255" // button dark blue active
+		blb1="103 193 245 155" // button light blue inactive
+		bdb2="65 122 155 155" // button dark blue inactive
 
 		flb="134 181 217 255" // friends online blue
 		flg="140 179 89 255" // friends ingame green
+		
 		// testing
 		dbg="24 31 39 255" // dark background
-
 }
 }

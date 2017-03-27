@@ -323,7 +323,7 @@
 			font-size=14
 			font-size=13 [$OSX]
 			font-family=basefont
-			textcolor="labelfocus"
+			textcolor="lbt"
 			padding-right=30
 			padding-left=17
 			font-style=uppercase
@@ -409,11 +409,11 @@
 
 		view_friends [!$OSX]
 		{
-			textcolor="LabelFocus"
+			textcolor="btc2"
 			bgcolor="none"
 			font-family=basefont
 			font-size=14
-			font-weight=400
+			font-weight=500
 			font-style=regular,uppercase
 			padding-top=6
 			padding-left=24
@@ -422,11 +422,11 @@
 
 		view_friends [$OSX]
 		{
-			textcolor="LabelFocus"
+			textcolor="btc2"
 			bgcolor="none"
 			font-family=basefont
-			font-size=13
-			font-weight=400
+			font-size=14
+			font-weight=500
 			font-style=regular,uppercase
 			padding-top=6
 			padding-left=24
@@ -436,7 +436,7 @@
 
 		view_friends:Hover
 		{
-			 textcolor="white"
+			 textcolor="btc2"
 		}
 
 		view_friends:disabled
@@ -446,7 +446,7 @@
 
 		online_friends [!$OSX]
 		{
-			textcolor="label2"
+			textcolor="lbt"
 			bgcolor="none"
 			font-family=basefont
 			font-size=14
@@ -455,10 +455,10 @@
 
 		online_friends [$OSX]
 		{
-			textcolor="label2"
+			textcolor="lbt"
 			bgcolor="none"
 			font-family=basefont
-			font-size=13
+			font-size=14
 			font-style=regular
 		}
 
@@ -543,7 +543,7 @@
 			font-size=14 
 			font-weight=800
 			font-style=none
-			textcolor=white
+			textcolor=lbt
 			padding-left=0
 			padding-right=0
 			padding-top=6
@@ -561,7 +561,7 @@
 			font-size=13 
 			font-weight=800
 			font-style=none
-			textcolor=white
+			textcolor=lbt
 			padding-left=0
 			padding-right=0
 			padding-top=6
@@ -626,7 +626,7 @@
 			{
 				// background fill
 				
-				0="fill(  x0 + 1, y0 + 3, x1+1, y1, green6 )"			
+				0="fill(  x0 + 1, y0 + 3, x1+1, y1, none )"			
 				1="image( x1-22, y0+6, x1 -2, y1, graphics/inbox_notification )"
 			}	
 		}
@@ -643,7 +643,7 @@
 			{
 				// background fill
 				
-				0="fill(  x0 + 1, y0 + 3, x1+1, y1, green5 )"			
+				0="fill(  x0 + 1, y0 + 3, x1+1, y1, none )"			
 				1="image( x1-22, y0+6, x1 -2, y1, graphics/inbox_notification )"
 			}	
 		}

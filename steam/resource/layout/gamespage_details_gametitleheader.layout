@@ -22,8 +22,9 @@
 		{
 			padding-bottom=5
 			padding-top=5
+			padding-left=10
 			font-size=48
-			textcolor="lbt"
+			textcolor="btc"
 			font-family=basefont2
 			font-weight=100 
 			bgcolor=none
