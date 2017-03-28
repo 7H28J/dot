@@ -1152,7 +1152,7 @@ steam.styles
     "GameItem_Installed:hover"
     {
       textcolor="lbt"
-      selectedtextcolor="btc"
+      selectedtextcolor="lbt"
     }
     
     "GameItem_Running"
@@ -1670,14 +1670,14 @@ steam.styles
 
   Menu
     {
-    bgcolor="MenuBG2"
+    bgcolor="bmb"
     padding-right=4
     inset="2 2 2 2"
-      
+
     render_bg
     {
-      0="gradient( x0, y0, x1, y0 + 140, MenuBG1, MenuBG2 )"
-      1="fill( x0, y0 + 140, x1, y1, MenuBG2 )"
+      0="gradient( x0, y0, x1, y0 + 100, bmb, bmb )"
+      1="fill( x0, y0 + 100, x1, y1, bmb )"
 
 
     }
@@ -1753,25 +1753,25 @@ steam.styles
   MenuItem
     {
     font-family=basefont
-    textcolor="label"
+    textcolor="mtc"
     font-size=14
     font-weight=400
     inset="0 0 0 0"
     padding-right=6
-    bgcolor="none"
+    bgcolor="bmb"
     render_bg {}
     }
    
   MenuItem:selected
     {
-    textcolor="TextHover"
-    bgcolor="none"
+    textcolor="white"
+    bgcolor="bmh"
     }
   
   MenuItem:hover
     {
     textcolor="white"
-    bgcolor="none"
+    bgcolor="bmh"
     }
     
     MenuItem:disabled
@@ -3471,6 +3471,7 @@ steam.styles
 
   SuperNavMenu
   {
+    textcolor="mtc"
     padding-left=8
     padding-right=8
 
@@ -3478,36 +3479,30 @@ steam.styles
 
     render_bg
     {
-      // top area and graphic
-      0="fill( x0, y0, x1, y1, MenuBg )"
-      1="image( x0, y0, x1, y1, graphics/clienttexture8)"
-      
-                // lines around
-        2="fill( x0 + 1, y0, x1 - 1, y0 + 1, blueborder )"  // top
-        3="fill( x0 + 1, y1 - 1, x1 - 1, y1, blueborder )"  // bottom
-        4="fill( x0, y0 + 1, x0 + 1, y1 - 1, blueborder )"  // left
-        5="fill( x1 - 1, y0 + 1, x1, y1 - 1, blueborder )"  // right
+      0="gradient( x0, y0, x1, y0 + 100, bmb, bmb )"
+      1="fill( x0, y0 + 100, x1, y1, bmb )"
     }
   }
 
   SuperNavMenuItem
   {
     padding=1
-    font-size=14
+    font-size=15
     font-weight=regular
-    textcolor="label"
+    textcolor="mtc"
     bgcolor=none
     font-style="uppercase"
   }
 
   SuperNavMenuItem:selected
   {
-    textcolor="SuperNav"
+    textcolor="white"
   }
 
   SuperNavMenuItem:hover
   {
-    textcolor="SuperNavHover"
+    textcolor="white"
+	bgcolor="bmh"
   }
 
   "SuperNavMenuDivider"
