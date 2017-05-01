@@ -11,7 +11,7 @@
 	}
 	
 	styles
-	{
+	{	
 		CDialogSettings
 		{
 			minimum-width="740"
@@ -29,7 +29,7 @@
 			minimum-width="535"
 			minimum-height="505"
 			inset="0 32 0 0"	
-		bgcolor=none
+			bgcolor=none
 			render_bg
 			{
 
@@ -52,9 +52,9 @@
 		textcolor="text2"
 		bgcolor="mbg" 
    		 render
-			{}
+		{}
 		render_bg 
-			{}
+		{}
     } 
 		
 		
@@ -69,8 +69,8 @@
 		place { control="settingslist" margin-top=32  }
 		place { control="sheet" margin-left=194 margin-top=-18 }
 		place { control="okbutton,cancelbutton" region="buttons"
-		        width=92 height=25 align=right
-						margin-right=10 margin-top=0
-						margin-bottom=2 spacing=10 }
+		width=92 height=25 align=right
+		margin-right=10 margin-top=0
+		margin-bottom=2 spacing=10 }
 	}
 }

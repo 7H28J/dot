@@ -668,7 +668,7 @@
 		"CSteamRootDialog TextEntryURL"
 		{
 			textcolor="lbt"
-			font-size=16		
+			font-size=14		
 		}
 		
 		"CSteamRootDialog TextEntryURL:hover"
@@ -688,19 +688,7 @@
 			bgcolor="none"
 			font-family=basefont
 			font-size=24
-			font-weight=500
-			font-style="uppercase"
-			padding-left=5
-			padding-right=5
-		}
-
-		CUINavButton [$OSX]
-		{
-			textcolor="btc2"
-			bgcolor="none"
-			font-family=basefont
-			font-size=24
-			font-weight=400 
+			font-weight=400
 			font-style="uppercase"
 			padding-left=5
 			padding-right=5
@@ -729,7 +717,7 @@
 
 		CUINavButton:selected
 		{
-			textcolor="white"
+			textcolor="lbt"
 			bgcolor=none
 			font-style="uppercase"
 		}
@@ -792,11 +780,7 @@
 
 		LabelEVCert [!$OSX]
 		{
-		font-family=basefont
-		font-size=14
-		textcolor="darkclientbg"
-		font-weight=400
-		bgcolor="html.secureurl"
+		bgcolor="none"
 		inset-left=4
 		inset-right=4
 		inset-top=3		
@@ -805,11 +789,7 @@
 			
 		LabelEVCert [$OSX]
 		{
-		font-family=basefont
-		font-size=14
-		textcolor="darkclientbg"
-		font-weight=400
-		bgcolor="html.secureurl"
+		bgcolor="none"
 		inset-left=3
 		inset-right=4
 		inset-top=3	
@@ -855,7 +835,8 @@
 
 		place { control="subnavgroup_library" align=top-center y=50 height=28 width=max margin-right=-2 margin-left=8 }
 		
-		place { control="URLStatusImage,EVCert,URLBar" align=left y=54 height=20 width=max spacing=1 margin-left=9 }
+		place { control="URLBar" align=left y=54 height=20 width=max spacing=1 margin-left=9 }
+		place { control="URLStatusImage,EVCert" x=0 y=0 width=0 height=0 }
 		place { control="URLBar" align=left y=54 height=20 width=max spacing=1 margin-left=5 }
 		place { control="refresh,stop" align=left y=54 height=20 width=max spacing=1 margin-left=-40 }
  	

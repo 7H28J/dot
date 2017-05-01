@@ -1034,8 +1034,9 @@
 	{
 		place [!$OSX] { control="New" width=0 height=0 y=0 width=max align=right margin-right=56}
 		place [$OSX]  { control="New" width=0 height=0 y=0 width=max align=right margin-right=-20}
-
-		place { control="UINavigatorPanel" width=max height=max margin-right=1 margin-left=1 margin-bottom=40 margin-top=22 }
+		
+		// margin-top=22 -> default
+		place { control="UINavigatorPanel" width=max height=max margin-right=1 margin-left=1 margin-bottom=40 margin-top=12 }
 
 		place { control="UIStatusPanel" width=max height=40 align=bottom  margin-bottom=18 }
 

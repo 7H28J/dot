@@ -33,7 +33,7 @@
 		SectionedListPanelCollapser
 		{
 			inset = "0 0 0 -2"
-			bgcolor=ButtonBorderDisabled
+			bgcolor="none"
 		}
 		SectionHeaderStyle
 		{
@@ -41,7 +41,7 @@
 			render_bg 
 			{	
 				// background gradient
-				0="gradient_horizontal( x0 - 2, y0, x1, y1, ButtonBorderDisabled, none )"
+				0="gradient_horizontal( x0 - 2, y0, x1, y1, none, none )"
 			}
 			render
 			{
@@ -80,8 +80,8 @@
 			render_bg 
 			{	
 				// background gradient
-				0="gradient( x0, y0, x1, y0 + 149, dialogbg, AlmostBlack )"
-				1="fill( x0, y0 + 149, x1, y1, AlmostBlack )" 
+				0="gradient( x0, y0, x1, y0 + 149, none, none )"
+				1="fill( x0, y0 + 149, x1, y1, none )" 
 			}
 		}	
 	}

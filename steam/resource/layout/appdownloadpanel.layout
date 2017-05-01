@@ -58,8 +58,8 @@
 		{
 			render_bg
 			{
-				0="gradient( x0, y0, x1, y1, dark_blue_grad, light_blue_grad )"
-				2="image( x0, y0 - 55, x1, y1+8, graphics/clienttexture2b)"
+				0="gradient( x0, y0, x1, y1, none, none )"
+				//2="image( x0, y0 - 55, x1, y1+8, graphics/clienttexture2b)"
 			}			
 		}
 

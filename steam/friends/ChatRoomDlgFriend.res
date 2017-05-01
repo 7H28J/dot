@@ -70,7 +70,7 @@
 	
 		label
 		{
-		font-size=13
+		font-size=14
 		font-weight=400
 		textcolor=lbt
 		}
@@ -103,7 +103,7 @@
 			render_bg
 			{
 				// lines around
-				1="gradient( x0 + 1, y0 + 1, x1 - 1, y1 - 1, sbg, sbg )"	
+				1="gradient( x0 + 1, y0 + 1, x1 - 1, y1 - 1, mbg, mbg )"	
 			}
 		}
 
@@ -154,23 +154,24 @@
 		{
 			font-size=16
 		}
-	}
+}
 	
 	layout
 	{
-		place { control="VoiceChat,ChatActionsButton" y=0 width=0 margin-right=8 align=right spacing=0 dir=right }
+		place { control="VoiceChat, ChatActionsButton" y=0 width=0 margin-right=8 align=right spacing=0 dir=right }
 		place { control="TitlePanel" margin-left=-3 y=2 height=-50 width=max margin-right=0 end-right=VoiceChat }
 		place { control="VoiceBar" y=34 height=24 width=max margin-left=8 margin-right=52 }
 		place { control="GameInviteBar,TradeInviteBar,ChatInfoBar,BIBar,BABar" height=54 }
 
 		place { control="TradeInviteBar,GameInviteBar,ChatInfoBar,BIBar,BABar,ChatHistory" y=10 margin-left=-5 margin-right=-5 width=max height=max align=right dir=down margin-bottom=74 spacing=3 }
 
-		region { name="chathistorybottom" y=60 margin-left=8 margin-right=8 width=max height=234 align=bottom margin-bottom=74 }
+		region { name="chathistorybottom" y=18 margin-left=8 margin-right=8 width=max height=234 align=bottom margin-bottom=74 }
 
-		region { name=bottomrow align=bottom height=76 }
-		place { control="EmoticonButton" region=bottomrow spacing=8 height=0 align=right margin-top=8 margin-right=8 }
-		place { control=SendButton height=0 width=0 }
+		region { name=bottomrow align=bottom height=58 }
+		//place { control="ChatActionsButton" align=bottom-right margin-bottom=54 margin-right=48 width=36 height=10 dir=up }
+		place { control="EmoticonButton" align=bottom-right margin-bottom=54 margin-right=-8 width=8 height=8 }
+		place { control="SendButton" region=bottomrow spacing=8 height=0 align=right margin-top=12 margin-right=8 }
 		place { control="TextEntry" region=bottomrow height=42 width=max margin-right=0 margin-right=8 margin-left=-5 margin-top=8 }
-		place { control="StatusLabel" region=bottomrow align=bottom width=max margin-left=0 margin-bottom=7 }
+		place { control="StatusLabel" align=bottom width=max margin-left=4 margin-right=17 margin-bottom=54 }
 	}
 }

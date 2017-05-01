@@ -7,9 +7,13 @@
 		
 		mbg="27 40 56 255" // main background
 		sbg="22 32 45 255" // sub background
+		sbg2="19 28 40 255" // sub background 2
+		
+		linkcolor="163 207 143 255"
 
 		btc="210 210 210 255" // base text color
 		btc2="143 152 160 255" // dark base text color
+		btc3="180 180 180 255" // "friends_chat_text_self"
 		lbt="134 181 217 255" // light blue text
 		
 		bfl="108 149 65 255" // button light green
@@ -28,6 +32,8 @@
 		
 		// testing
 		dbg="24 31 39 255" // dark background
+		tbg="31 47 66 235" // test background for the library
+		tbg2="39 59 82 200" // test background for the library
 		
 		// 2017 Store inspired menu
 		mlb="227 234 239 255"

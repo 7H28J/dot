@@ -6,7 +6,7 @@
 		text = [!$OSX]	"#steam_menu_file"		
 		text = [$OSX]	"#SteamRootAccount"	
 
-		Restart 							{ text="#steam_mustrestart_button"				command="RestartSteam" }
+		Restart 						{ text="#steam_mustrestart_button"				command="RestartSteam" }
 		
 		ChangeUser						{	text="#steam_menu_changeuser"			command="ChangeUser" }
 		GoOnline						{	text="#SteamUI_OfflineMode_GoOnline"	command="goonline" }
@@ -118,12 +118,5 @@
 		Divider							{}
 		SystemInfo						{	text="#steam_menu_systeminfo"			command="SystemInfo" }
 		About							{	text="#steam_about"						command="About" }
-	}
-
-	Github
-	{
-		Group			{	text="Github Page"		shellcmd="steam://openurl/https://github.com/7H28J/dotfiles/tree/master/modernized" }
-		Divider			{}
-		Group			{	text="7H28J"		shellcmd="steam://openurl/http://steamcommunity.com/id/7H28J/" }
 	}
 }

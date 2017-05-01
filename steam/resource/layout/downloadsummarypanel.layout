@@ -130,7 +130,7 @@
 	{
 		CDownloadSummaryPanel
 		{
-			bgcolor=panelBackground
+			bgcolor="sbg"
 			inset="0	0 0 0"
 	  	}
 	   
@@ -283,7 +283,7 @@
 		  
 		NetGraphPanel
 		{
-			bgcolor   "none"	
+			bgcolor   "sbg"	
 			textcolor "highlight5"
 			render_bg
 			{
@@ -292,14 +292,14 @@
 			}
 			render
 			{
-				0="fill( x0, y0, x0+50,	y1, panelBackground	)"
-				1="gradient_horizontal( x0+50, y0, x0+100, y1, panelBackground,	panelBackgroundTransparent )"
+				0="fill( x0, y0, x0+50,	y1, none	)"
+				1="gradient_horizontal( x0+50, y0, x0+100, y1, none,	none )"
 			}
 		}
 		
 		DiscGraphPanel
 		{
-			bgcolor   "none"	
+			bgcolor   "sbg"	
 			textcolor="green7"
 			render_bg
 			{
@@ -308,8 +308,8 @@
 			}
 			render
 			{
-				0="fill( x0, y0, x0+50,	y1, panelBackground	)"
-				1="gradient_horizontal( x0+50, y0, x0+100, y1, panelBackground,	panelBackgroundTransparent )"
+				0="fill( x0, y0, x0+50,	y1, none	)"
+				1="gradient_horizontal( x0+50, y0, x0+100, y1, none,	none )"
 			}
 		}
 		

@@ -218,6 +218,7 @@
 		{
 			padding-right=14
 			padding-top=4
+			textcolor="btc2"
 			render
 			{
 				0="image( x1-18, y0 + 11, x1-0, y1, graphics/icon_down_default )"
@@ -226,6 +227,7 @@
 
 		"MenuBar MenuButton:hover"
 		{
+			textcolor="btc"
 			render
 			{
 				0="image( x1-18, y0 + 11, x1-0, y1, graphics/icon_down_hover )"
@@ -247,7 +249,7 @@
 			font-family=basefont
 			font-size=14
 			font-weight=400	
-			textcolor="text"	
+			textcolor="lbt"	
 			render { }	
 			bgcolor=none
 			render_bg
@@ -263,8 +265,8 @@
 		
 		FriendsSearch:empty
 		{
-			font-style=italic
-			textcolor="LabelDisabled"
+			font-style="normal"
+			textcolor="lbt"
 			
 		}
 		
@@ -314,7 +316,27 @@
 				// background fill
 				0="fill( x0 + 1, y0 + 1, x1 - 1, y1 - 1, dialogbg )"
 			}
-		}		
+		}
+
+		ScrollBarHandle
+		{
+			bgcolor=none
+			//image="graphics/icon_scroll_handle"
+			render_bg 
+		{
+			// center fill
+			0="fill( x0 + 2, y0 + 6, x1 - 4, y1 - 5, none )"
+		}
+    }
+       
+		"ScrollBarHandle:hover"
+		{
+			//image="graphics/icon_scroll_handle_over"
+			render_bg 
+		{
+			0="fill( x0 + 2, y0 + 6, x1 - 4, y1 - 5, none )"
+		}
+    }
 		
 		
 	}
@@ -331,10 +353,10 @@
 
 
 
-		place { control="FriendPanelSelf" y=24 align=left margin-left=7 margin-right=100 margin-top=2 margin-bottom=38 dir=right spacing=3 }
+		place { control="FriendPanelSelf" y=24 align=left margin-left=7 margin-right=-10 margin-top=2 margin-bottom=38 dir=right spacing=3 }
 		place { control="friends_search_icon" margin-left=-30 start=FriendPanelSelf dir=down margin-top=5 }
 		place { control="friends_search" start=friends_search_icon dir=right margin-right=2 margin-left=2 y=-2 margin-bottom=38 width=max }
-		place { control="FriendsDialogSheet" start=friends_search_icon margin-left=2 dir=down width=max height=max spacing=3 margin-top=2 margin-bottom=10 margin-right=7 }
+		place { control="FriendsDialogSheet" start=friends_search_icon margin-left=2 dir=down width=max height=max spacing=3 margin-top=2 margin-bottom=10 margin-right=-10 }
 		place { control="addFriendsButton" align=bottom margin-left=-400 }
  	}
 
