@@ -25,7 +25,7 @@
 		{
 			style="namestyle"
 		}
-
+		
 		// the (1) next to the name when multiple friends have the same name
 		FriendsNameInstanceLabel
 		{
@@ -80,12 +80,10 @@
 			tooltiptext="#Friends_VRStatusStatus_Tooltip"
 		}
 
-
 		StatusLabel
 		{
 			style="statusStyle"
 		}
-		
 		GameLabel
 		{
 			style="statusStyle"
@@ -121,11 +119,14 @@
 	{
 		CFriendPanel:selected //avatar view
 		{
-			padding=-18
-			margin=-18
-			render_bg {
-
-
+			render_bg 
+			{
+				0="fill( x0-2, y0  , x1-6, y1-10, focus5 )"
+				
+				1="fill( x0-4, y0-2, x1-4, y0-1, focus4 )"	// t
+				2="fill( x0-4, y1-9, x1-4, y1-8, focus4 )"	// b
+				3="fill( x0-4, y0-1, x0-3, y1-8, focus4 )"	// l
+				4="fill( x1-5, y0-1, x1-4, y1-8, focus4 )"	// r
 			}	
 		}
 		
@@ -135,11 +136,12 @@
 			{
 			}
 		}
-	
+
 		namestyle
 		{
 			font-family=basefont
 			font-size=14
+			font-weight=500
 		}
 		
 		nameInstanceStyle
@@ -151,13 +153,26 @@
 		
 		menuButtonStyle
 		{
-			minimum-width=14
+			minimum-width=0
 			padding-top=3
 			padding-bottom=4
 			padding-right=5
 			padding-left=6
 		}
+		
+		menuButtonStyle:hover
+		{
 
+			render_bg {
+			
+			//background
+			0="fill( x0 + 5, y0 + 1, x1 - 4, y1 - 2, buttonfaceactive )"
+			//lines around
+			1="fill(x0 + 4, y0 + 2, x0 + 5, y1 - 3, buttonfaceactive )"  //left
+			2="fill(x1 - 4, y0 + 2, x1 - 3, y1 - 3, buttonfaceactive )"  //right
+			}
+		}
+		
 		controlPanelLinkStyle
 		{
 			font-family=basefont
@@ -174,11 +189,6 @@
 			font-size=14
 		}
 		
-		statusStyle:hover
-		{
-			textcolor=text2
-		}
-		
 		inviteLinkStyle
 		{
 			font-style=""
@@ -190,7 +200,7 @@
 			textcolor=White
 			font-style=underline
 		}
-		
+
 		WebStatusStyle
 		{
 			image="graphics/icon_status_web"
@@ -208,7 +218,7 @@
 			image="graphics/icon_status_mobile"
 			padding-left=4
 		}
-		
+
 		VRStatusStyle
 		{
 			image="graphics/icon_status_vr"
@@ -224,44 +234,44 @@
 		BigPictureStatusStyleInGame
 		{
 			image="graphics/icon_status_bigpic_ingame"
-			padding-left=2
+			padding-left=4
 		}
-	
+		
 		MobileStatusStyleInGame
 		{
 			image="graphics/icon_status_mobile_ingame"
 			padding-left=4
 		}
-		
+
 		VRStatusStyleInGame
 		{
 			image="graphics/icon_status_vr_ingame"
 			padding-left=4
 		}
-
-}
-	
+	}
 	
 	layout
 	{
-		place {	control="AvatarOverlayImage"	x=2 y=5 width=40 height=40		}
-		place {	control="AvatarImage"			x=6 y=9 width=32 height=32		}
-		place {	control="Clanstatusimage"			x=20  width=15 }
-		place { control="ClanStatusImage,NameLabel,FriendsNameInstanceLabel,MenuButton" x=50 y=7  }
-
-		place { control="StatusLabel,BigPictureStatusImage,VRStatusImage,MobileStatusImage,WebStatusImage,BigPictureStatusImageInGame,VRStatusImageInGame,MobileStatusImageInGame,WebStatusImageInGame" x=50 y=19 }
-		place { control="GameLabel" x=50 y=31 }
+		place {	control="AvatarImage"			x=2 y=4 width=32 height=32		}
+		place {	control="AvatarOverlayImage"	x=0 y=2 width=36 height=36		}
+		place {	control="Clanstatusimage"			x=17  width=15 }
+		place { control="ClanStatusImage,NameLabel,FriendsNameInstanceLabel" x=42 y=1 }
+		place { control="MenuButton" x=42 y=6  height=0 }
+		
+		place { control="StatusLabel,BigPictureStatusImage,VRStatusImage,MobileStatusImage,WebStatusImage,BigPictureStatusImageInGame,MobileStatusImageInGame,WebStatusImageInGame"		x=52 y=13 }
+		place { control="GameLabel"			x=52 y=25 }
 
 		// these controls are shown for friendship requests
-		place { control="AcceptLink,IgnoreLink,BlockLink"	x=50 y=31 spacing=8 }
+		place { control="AcceptLink,IgnoreLink,BlockLink"	x=52 y=14 spacing=8 }
 		
 		// this control is shown in the invite-to-game dialog in the overlay
 		place { control="InviteToGameButton" align=right y=4 padding-right=6 margin-right=20 }
 		
-		place { control="ControlPanelLink" x=50 y=31 }
+		place { control="ControlPanelLink" x=42 y=25 }
+		
+		// Facebook stuff? Needs testing
+		place { control="SuggestedImage,SuggestedLabel" x=50 y=26 spacing=4 }
+		place { control="SuggestedInvite,SuggestedIgnore" x=50 y=38 spacing=8 }
 
-		place { control="SuggestedImage,SuggestedLabel" x=50 y=19 spacing=4 }
-		place { control="SuggestedInvite,SuggestedIgnore" x=50 y=31 spacing=8 }
 	}
-
 }

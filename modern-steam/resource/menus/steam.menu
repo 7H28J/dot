@@ -28,7 +28,6 @@
 		Divider				[!$OSX]		{}
 		Settings			[!$OSX]		{	text="#steam_menu_settings"				command="Settings" }
 		Divider				[!$OSX]		{}
-		Restart 							{ text="refresh.."				command="RestartSteam" }
 		Exit				[!$OSX]		{	text="#Steam_ExitSteam"					command="Exit" }	
 	}
 	

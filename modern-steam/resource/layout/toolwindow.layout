@@ -94,24 +94,28 @@
 		{
 			font-size=14
 			font-style=regular
+			textcolor=btc2
     }
     
 	  PageTab:hover
 	  {
 			font-size=14
 			font-style=regular
+			textcolor=btc
 		}
   
 		PageTab:selected:hover
 		{
 			font-size=14
 			font-style=regular
+			textcolor=btc
 		}
 	    
 		PageTab:selected
 		{
 			font-size=14
 			font-style=regular
+			textcolor=btc
 	  }
     
 	}

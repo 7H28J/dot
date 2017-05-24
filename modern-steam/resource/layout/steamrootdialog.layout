@@ -14,9 +14,9 @@
 		
 		"startvr"
 		{
-			"ControlName"		"Button"
-			style="VRButton"
-      command="startvr"
+		"ControlName"		"Button"
+		style="VRButton"
+		command="startvr"
      	tooltiptext="#tooltip_view_vr_start" 
 		}
     
@@ -154,7 +154,7 @@
 		      bgcolor="none"
 		      font-family=basefont
 		      font-size=14
-		      font-weight=400
+		      font-weight=500
 		      font-style=regular
 		}
 
@@ -163,8 +163,8 @@
 		      textcolor="labeldisabled"
 		      bgcolor="none"
 		      font-family=basefont
-		      font-size=13
-		      font-weight=400
+		      font-size=14
+		      font-weight=500
 		      font-style=regular
 		      inset="0 1 0 0"
 		}
@@ -178,8 +178,8 @@
 		{
 			textcolor="ScrollGlyphDisabled"
 			font-family=basefont
-			font-size=13
-			font-weight=400
+			font-size=14
+			font-weight=500
 		    font-style=regular
 			inset="0 0 0 0"
 		}
@@ -1066,7 +1066,7 @@
 
 		place { control="FriendPanel" height=48 width=48 region=bottom align=right margin-right=2 margin-top=16 }
 		place { control="view_friends" height=62 y=12 region=bottom align=right dir=right margin-right=56 }
-		place { control="online_friends" height=12 y=38 region=bottom align=right dir=right margin-right=56 }
+		place { control="online_friends" height=12 y=48 region=bottom align=right dir=right margin-right=56 }
 
 		// Hidden
 		place { control="frame_title,account_URL,account_balance_seperator" width=0 height=0 }

@@ -64,8 +64,8 @@
 	
 	layout
 	{
-		place { control="InviteImage,InviteSentImage" x=2 y=2 width=50 height=50 }
-		place { control="InviteLabel,ClickHereLabel,InviteSentLabel,WaitingForResponseLabel" width=max dir=down spacing=12 margin-top=6 margin-right=2 margin-left=60 }
+		place { control="InviteImage,InviteSentImage" x=1 y=1 width=0 height=0 }
+		place { control="InviteLabel,ClickHereLabel,InviteSentLabel,WaitingForResponseLabel" width=max dir=down spacing=0 margin-top=0 margin-right=2 margin-left=8 }
 		place { control="CloseButton" align=right margin=0 width=20 height=20 }
 	}
 }

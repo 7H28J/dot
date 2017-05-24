@@ -1,6 +1,6 @@
 steam.styles
 {
-
+  
   include "config\colors.styles"
 
   colors
@@ -337,10 +337,10 @@ steam.styles
         render_bg {
         
         //background
-        0="fill( x0 + 5, y0 + 4, x1 - 2, y1 - 4, buttonfaceactive )"
+        0="fill( x0 + 5, y0 + 4, x1 - 2, y1 - 4, none )"
         //lines around
-        1="fill(x0 + 4, y0 + 5, x0 + 5, y1 - 5, buttonfaceactive )"  //left
-        2="fill(x1 - 2, y0 + 5, x1 - 1, y1 - 5, buttonfaceactive )"  //right
+        1="fill(x0 + 4, y0 + 5, x0 + 5, y1 - 5, none )"  //left
+        2="fill(x1 - 2, y0 + 5, x1 - 1, y1 - 5, none )"  //right
         }
     }
   
@@ -486,7 +486,7 @@ steam.styles
       inset="0 0 0 0"
       font-size=14
       font-weight=400
-      textcolor="Label"
+      textcolor="lbt"
     }
     
     CFriendsListSectionHeader
@@ -508,8 +508,8 @@ steam.styles
       bgcolor=none
       font-family=basefont
       font-size=14
-      font-size=13 [$OSX]
-      font-weight=400
+      font-size=14 [$OSX]
+      font-weight=500
       textcolor="label"
     }
 
@@ -814,7 +814,7 @@ steam.styles
     bgcolor="mbg"
       render
       {
-        0="fill_horizontal( x0, y1 - 1, x1 + 1, y1, sbg, sbg )"
+        0="fill( x0, y1 - 1, x1 + 1, y1, sbg, sbg )"
         1="fill( x1 - 1, y0, x1, y1, sbg, sbg )"
         2="fill( x0, y0, x1, y0 + 1, sbg )"
         3="fill( x0, y0, x0 + 1, y1, sbg )"
@@ -826,7 +826,7 @@ steam.styles
     bgcolor="mbg"
       render
       {
-        0="fill_horizontal( x0, y1 - 1, x1 + 1, y1, sbg, sbg )"
+        0="fill( x0, y1 - 1, x1 + 1, y1, sbg, sbg )"
         1="fill( x1 - 1, y0, x1, y1, sbg, sbg )"
         2="fill( x0, y0, x1, y0 + 1, sbg )"
         3="fill( x0, y0, x0 + 1, y1, sbg )"
@@ -1742,9 +1742,9 @@ steam.styles
   
   MenuButton
     {
-      font-family=basefont
+      font-family=btc2
       font-size=14
-      font-weight=400
+      font-weight=500
       bgcolor="none"
       render_bg {}
 
@@ -1752,12 +1752,12 @@ steam.styles
    
   MenuButton:hover
     {
-      textcolor="white"
+      textcolor="btc"
     }
     
   MenuButton:selected
     {
-    textcolor="white"
+    textcolor="btc"
     }
         
   MenuItem
@@ -3324,9 +3324,9 @@ steam.styles
 
   friends_chat_url // Chat Links Color
   {
-    textcolor="linkcolor"
+    textcolor="white"
     SelectedBgColor="focus"
-    font-style=normal
+    font-style=underline
     font-size=16
     selectedtextcolor="TextentrySelected"
     selectedbgcolor="focus"
