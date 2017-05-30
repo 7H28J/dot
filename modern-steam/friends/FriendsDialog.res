@@ -350,9 +350,6 @@
 		place { control="frame_captiongrip" margin=2 width=max height=100 }
 		place [!$OSX] { control="MenuBar" margin-left=0 height=24 margin-top=2 }
 
-
-
-
 		place { control="FriendPanelSelf" y=24 align=left margin-left=7 margin-right=-10 margin-top=2 margin-bottom=38 dir=right spacing=3 }
 		place { control="friends_search_icon" margin-left=-30 start=FriendPanelSelf dir=down margin-top=5 }
 		place { control="friends_search" start=friends_search_icon dir=right margin-right=2 margin-left=2 y=-2 margin-bottom=38 width=max }

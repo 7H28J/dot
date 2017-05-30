@@ -1978,7 +1978,7 @@ steam.styles
     {
     bgcolor="PropertySheetBG"
     }
-    
+	
     "CFriendsDialog PropertySheet"
     {
     bgcolor="none"
