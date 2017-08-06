@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="Shift_JIS"?>
+<?xml-stylesheet type="text/xsl" href="hoot.xsl"?>
+<!DOCTYPE gamelist [
+	<!ELEMENT gamelist (game|bind|childlists)*>
+	<!ATTLIST gamelist date CDATA #IMPLIED>
+	<!ELEMENT childlists (list)*>
+	<!ELEMENT list (#PCDATA)>
+	<!ELEMENT bind (exts,driver,options?)>
+	<!ELEMENT exts (ext)*>
+	<!ELEMENT ext (#PCDATA)>
+	<!ELEMENT game (name,driver,driveralias?,options?,romlist?,titlelist?)>
+	<!ELEMENT name (#PCDATA)>
+	<!ELEMENT driver (#PCDATA)>
+	<!ATTLIST driver type CDATA #IMPLIED>
+	<!ELEMENT driveralias (#PCDATA)>
+	<!ATTLIST driveralias type CDATA #IMPLIED>
+	<!ELEMENT options (option)*>
+	<!ELEMENT option EMPTY>
+	<!ATTLIST option name CDATA #REQUIRED
+		 value CDATA #REQUIRED>
+	<!ELEMENT romlist (rom)*>
+	<!ATTLIST romlist archive CDATA #IMPLIED>
+	<!ELEMENT rom (#PCDATA)>
+	<!ATTLIST rom type CDATA #REQUIRED
+		offset CDATA #IMPLIED>
+	<!ELEMENT titlelist (title|range)*>
+	<!ELEMENT title (#PCDATA)>
+	<!ATTLIST title code CDATA #REQUIRED
+					type CDATA #IMPLIED>
+	<!ELEMENT range (#PCDATA)>
+	<!ATTLIST range min CDATA #REQUIRED
+					max CDATA #REQUIRED
+					extcode CDATA #IMPLIED>
+]>
+<gamelist date="2005/09/25">
+<game>
+		<name>Final Fantasy VI</name>
+		<driver type="spc">snes</driver>
+		<driveralias type="SNES">spc</driveralias>
+		 <options>
+            <option name="apu_mix" value="0x200"/>
+        </options>
+		<romlist archive="ff6">
+			<rom type="data" offset="0x00">ff6-101a.spc</rom>
+			<rom type="data" offset="0x01">ff6-101b.spc</rom>
+			<rom type="data" offset="0x02">ff6-101c.spc</rom>
+			<rom type="data" offset="0x03">ff6-102.spc</rom>
+			<rom type="data" offset="0x04">ff6-103.spc</rom>
+			<rom type="data" offset="0x05">ff6-104.spc</rom>
+			<rom type="data" offset="0x06">ff6-105.spc</rom>
+			<rom type="data" offset="0x07">ff6-106.spc</rom>
+			<rom type="data" offset="0x08">ff6-107.spc</rom>
+			<rom type="data" offset="0x09">ff6-108.spc</rom>
+			<rom type="data" offset="0x0a">ff6-109.spc</rom>
+			<rom type="data" offset="0x0b">ff6-110.spc</rom>
+			<rom type="data" offset="0x0c">ff6-111.spc</rom>
+			<rom type="data" offset="0x0d">ff6-112.spc</rom>
+			<rom type="data" offset="0x0e">ff6-113.spc</rom>
+			<rom type="data" offset="0x0f">ff6-114.spc</rom>
+			<rom type="data" offset="0x10">ff6-115.spc</rom>
+			<rom type="data" offset="0x11">ff6-116.spc</rom>
+			<rom type="data" offset="0x12">ff6-117.spc</rom>
+			<rom type="data" offset="0x13">ff6-118.spc</rom>
+			<rom type="data" offset="0x14">ff6-119.spc</rom>
+			<rom type="data" offset="0x15">ff6-120.spc</rom>
+			<rom type="data" offset="0x16">ff6-121.spc</rom>
+			<rom type="data" offset="0x17">ff6-122.spc</rom>
+			<rom type="data" offset="0x18">ff6-123.spc</rom>
+			<rom type="data" offset="0x19">ff6-124.spc</rom>
+			<rom type="data" offset="0x1a">ff6-125.spc</rom>
+			<rom type="data" offset="0x1b">ff6-201.spc</rom>
+			<rom type="data" offset="0x1c">ff6-202.spc</rom>
+			<rom type="data" offset="0x1d">ff6-203.spc</rom>
+		  <rom type="data" offset="0x1e">ff6-204.spc</rom>
+			<rom type="data" offset="0x1f">ff6-205.spc</rom>
+			<rom type="data" offset="0x20">ff6-206.spc</rom>
+			<rom type="data" offset="0x21">ff6-207a.spc</rom>
+			<rom type="data" offset="0x22">ff6-207b.spc</rom>
+			<rom type="data" offset="0x23">ff6-207c.spc</rom>
+			<rom type="data" offset="0x24">ff6-208.spc</rom>
+			<rom type="data" offset="0x25">ff6-209a.spc</rom>
+			<rom type="data" offset="0x26">ff6-209b.spc</rom>
+			<rom type="data" offset="0x27">ff6-209c.spc</rom>
+			<rom type="data" offset="0x28">ff6-209d.spc</rom>
+			<rom type="data" offset="0x29">ff6-210a.spc</rom>
+			<rom type="data" offset="0x2a">ff6-210b.spc</rom>
+			<rom type="data" offset="0x2b">ff6-211.spc</rom>
+			<rom type="data" offset="0x2c">ff6-212.spc</rom>
+			<rom type="data" offset="0x2d">ff6-213.spc</rom>
+			<rom type="data" offset="0x2e">ff6-214.spc</rom>
+			<rom type="data" offset="0x2f">ff6-215.spc</rom>
+			<rom type="data" offset="0x30">ff6-216.spc</rom>
+			<rom type="data" offset="0x31">ff6-217.spc</rom>
+			<rom type="data" offset="0x32">ff6-218.spc</rom>
+			<rom type="data" offset="0x33">ff6-219.spc</rom>
+			<rom type="data" offset="0x34">ff6-220.spc</rom>
+			<rom type="data" offset="0x35">ff6-301.spc</rom>
+			<rom type="data" offset="0x36">ff6-302.spc</rom>
+			<rom type="data" offset="0x37">ff6-303.spc</rom>
+			<rom type="data" offset="0x38">ff6-304.spc</rom>
+			<rom type="data" offset="0x39">ff6-305.spc</rom>
+			<rom type="data" offset="0x3a">ff6-306.spc</rom>
+			<rom type="data" offset="0x3b">ff6-307.spc</rom>
+			<rom type="data" offset="0x3c">ff6-308.spc</rom>
+			<rom type="data" offset="0x3d">ff6-309.spc</rom>
+			<rom type="data" offset="0x3e">ff6-310.spc</rom>
+			<rom type="data" offset="0x3f">ff6-311.spc</rom>
+			<rom type="data" offset="0x40">ff6-312.spc</rom>
+		  <rom type="data" offset="0x41">ff6-313.spc</rom>
+		  <rom type="data" offset="0x42">ff6-314a.spc</rom>
+		  <rom type="data" offset="0x43">ff6-314b.spc</rom>
+		  <rom type="data" offset="0x44">ff6-314c.spc</rom>
+		  <rom type="data" offset="0x45">ff6-314d.spc</rom>
+		  <rom type="data" offset="0x46">ff6-314e.spc</rom>
+		  <rom type="data" offset="0x47">ff6-315a.spc</rom>
+		  <rom type="data" offset="0x48">ff6-315b.spc</rom>
+		  <rom type="data" offset="0x49">ff6-316.spc</rom>
+		  <rom type="data" offset="0x4a">ff6-b01.spc</rom>
+		  <rom type="data" offset="0x4b">ff6-s01.spc</rom>
+		  <rom type="data" offset="0x4c">ff6-s02.spc</rom>
+		  <rom type="data" offset="0x4d">ff6-s03.spc</rom>
+		  <rom type="data" offset="0x4e">ff6-s04.spc</rom>
+		  <rom type="data" offset="0x4f">ff6-s05.spc</rom>
+		  <rom type="data" offset="0x50">ff6-s06.spc</rom>
+		  <rom type="data" offset="0x51">ff6-s05.spc</rom>
+		</romlist>
+		<titlelist>
+			<title code="0x00"></title>
+			<title code="0x01"></title>
+			<title code="0x02"></title>
+			<title code="0x03"></title>
+			<title code="0x04"></title>
+			<title code="0x05"></title>
+			<title code="0x06"></title>
+			<title code="0x07"></title>
+			<title code="0x08"></title>
+			<title code="0x09"></title>
+			<title code="0x0a"></title>
+			<title code="0x0b"></title>
+			<title code="0x0c"></title>
+			<title code="0x0d"></title>
+			<title code="0x0e"></title>
+			<title code="0x0f"></title>
+			<title code="0x10"></title>
+			<title code="0x11"></title>
+			<title code="0x12"></title>
+			<title code="0x13"></title>
+			<title code="0x14"></title>
+			<title code="0x15"></title>
+			<title code="0x16"></title>
+			<title code="0x17"></title>
+			<title code="0x18"></title>
+			<title code="0x19"></title>
+			<title code="0x1a"></title>
+			<title code="0x1b"></title>
+			<title code="0x1c"></title>
+			<title code="0x1d"></title>
+			<title code="0x1e"></title>
+			<title code="0x1f"></title>
+			<title code="0x20"></title>
+			<title code="0x21"></title>
+			<title code="0x22"></title>
+			<title code="0x23"></title>
+			<title code="0x24"></title>
+			<title code="0x25"></title>
+			<title code="0x26"></title>
+			<title code="0x27"></title>
+			<title code="0x28"></title>
+			<title code="0x29"></title>
+			<title code="0x2a"></title>
+			<title code="0x2b"></title>
+			<title code="0x2c"></title>
+			<title code="0x2d"></title>
+			<title code="0x2e"></title>
+			<title code="0x2f"></title>
+			<title code="0x30"></title>
+			<title code="0x31"></title>
+			<title code="0x32"></title>
+			<title code="0x33"></title>
+			<title code="0x34"></title>
+			<title code="0x35"></title>
+			<title code="0x36"></title>
+			<title code="0x37"></title>
+			<title code="0x38"></title>
+			<title code="0x39"></title>
+			<title code="0x3a"></title>
+			<title code="0x3b"></title>
+			<title code="0x3c"></title>
+			<title code="0x3d"></title>
+			<title code="0x3e"></title>
+			<title code="0x3f"></title>
+			<title code="0x40"></title>
+			<title code="0x41"></title>
+			<title code="0x42"></title>
+			<title code="0x43"></title>
+			<title code="0x44"></title>
+			<title code="0x45"></title>
+			<title code="0x46"></title>
+			<title code="0x47"></title>
+			<title code="0x48"></title>
+			<title code="0x49"></title>
+			<title code="0x4a"></title>
+			<title code="0x4b"></title>
+			<title code="0x4c"></title>
+			<title code="0x4d"></title>
+			<title code="0x4e"></title>
+			<title code="0x4f"></title>
+			<title code="0x50"></title>
+			<title code="0x51"></title>
+		</titlelist>
+	</game>
+</gamelist>
