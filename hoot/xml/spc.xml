@@ -71,7 +71,7 @@
 			<rom type="data" offset="0x1b">ff6-201.spc</rom>
 			<rom type="data" offset="0x1c">ff6-202.spc</rom>
 			<rom type="data" offset="0x1d">ff6-203.spc</rom>
-		        <rom type="data" offset="0x1e">ff6-204.spc</rom>
+			<rom type="data" offset="0x1e">ff6-204.spc</rom>
 			<rom type="data" offset="0x1f">ff6-205.spc</rom>
 			<rom type="data" offset="0x20">ff6-206.spc</rom>
 			<rom type="data" offset="0x21">ff6-207a.spc</rom>
@@ -106,23 +106,23 @@
 			<rom type="data" offset="0x3e">ff6-310.spc</rom>
 			<rom type="data" offset="0x3f">ff6-311.spc</rom>
 			<rom type="data" offset="0x40">ff6-312.spc</rom>
-		        <rom type="data" offset="0x41">ff6-313.spc</rom>
-		        <rom type="data" offset="0x42">ff6-314a.spc</rom>
+			<rom type="data" offset="0x41">ff6-313.spc</rom>
+			<rom type="data" offset="0x42">ff6-314a.spc</rom>
 		  	<rom type="data" offset="0x43">ff6-314b.spc</rom>
 		  	<rom type="data" offset="0x44">ff6-314c.spc</rom>
-		 	<rom type="data" offset="0x45">ff6-314d.spc</rom>
-			<rom type="data" offset="0x46">ff6-314e.spc</rom>
-		        <rom type="data" offset="0x47">ff6-315a.spc</rom>
-			<rom type="data" offset="0x48">ff6-315b.spc</rom>
-			<rom type="data" offset="0x49">ff6-316.spc</rom>
-			<rom type="data" offset="0x4a">ff6-b01.spc</rom>
-			<rom type="data" offset="0x4b">ff6-s01.spc</rom>
-			<rom type="data" offset="0x4c">ff6-s02.spc</rom>
-			<rom type="data" offset="0x4d">ff6-s03.spc</rom>
-			<rom type="data" offset="0x4e">ff6-s04.spc</rom>
-			<rom type="data" offset="0x4f">ff6-s05.spc</rom>
-			<rom type="data" offset="0x50">ff6-s06.spc</rom>
-		 	<rom type="data" offset="0x51">ff6-s05.spc</rom>
+		  	<rom type="data" offset="0x45">ff6-314d.spc</rom>
+		  	<rom type="data" offset="0x46">ff6-314e.spc</rom>
+		  	<rom type="data" offset="0x47">ff6-315a.spc</rom>
+		  	<rom type="data" offset="0x48">ff6-315b.spc</rom>
+		  	<rom type="data" offset="0x49">ff6-316.spc</rom>
+		  	<rom type="data" offset="0x4a">ff6-b01.spc</rom>
+		  	<rom type="data" offset="0x4b">ff6-s01.spc</rom>
+		  	<rom type="data" offset="0x4c">ff6-s02.spc</rom>
+		  	<rom type="data" offset="0x4d">ff6-s03.spc</rom>
+		  	<rom type="data" offset="0x4e">ff6-s04.spc</rom>
+		  	<rom type="data" offset="0x4f">ff6-s05.spc</rom>
+		  	<rom type="data" offset="0x50">ff6-s06.spc</rom>
+		  	<rom type="data" offset="0x51">ff6-s05.spc</rom>
 		</romlist>
 		<titlelist>
 			<title code="0x00"></title>
