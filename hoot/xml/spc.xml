@@ -71,7 +71,7 @@
 			<rom type="data" offset="0x1b">ff6-201.spc</rom>
 			<rom type="data" offset="0x1c">ff6-202.spc</rom>
 			<rom type="data" offset="0x1d">ff6-203.spc</rom>
-		  <rom type="data" offset="0x1e">ff6-204.spc</rom>
+		        <rom type="data" offset="0x1e">ff6-204.spc</rom>
 			<rom type="data" offset="0x1f">ff6-205.spc</rom>
 			<rom type="data" offset="0x20">ff6-206.spc</rom>
 			<rom type="data" offset="0x21">ff6-207a.spc</rom>
