@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TerrainDefs>
+
+
+  <TerrainDef Name="FloorBase" Abstract="True">
+    <layerable>true</layerable>
+    <affordances>
+      <li>Light</li>
+      <li>Heavy</li>
+      <li>SmoothHard</li>
+    </affordances>
+    <statBases>
+      <WorkToBuild>135</WorkToBuild>
+    </statBases>
+    <designationCategory>Floors</designationCategory>
+    <Fertility>0</Fertility>
+    <constructEffect>ConstructDirt</constructEffect>
+    <AcceptTerrainSourceFilth>True</AcceptTerrainSourceFilth>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+  </TerrainDef>
+
+
+
+  <!-- ================= Misc ================= -->
+
+	<TerrainDef ParentName="FloorBase">
+		<defName>DirtPath</defName>
+		<label>dirt path</label>
+		<Description>Simple dirt pathway</Description>
+		<texturePath>Terrain/Surfaces/DirtPath</texturePath>
+		<EdgeType>Hard</EdgeType>
+		<RenderPrecedence>70</RenderPrecedence>
+		<statBases>
+			<Beauty>1</Beauty>
+			<WorkToBuild>10</WorkToBuild>
+		</statBases>
+		<CostList>
+		</CostList>
+	</TerrainDef>
+
+</TerrainDefs>
