@@ -3,12 +3,14 @@
 
 
   <TerrainDef Name="FloorBase" Abstract="True">
+    <EdgeType>FadeRough</EdgeType>
     <layerable>true</layerable>
     <affordances>
       <li>Light</li>
       <li>Heavy</li>
       <li>SmoothHard</li>
     </affordances>
+    <TakeFootprints>True</TakeFootprints>
     <statBases>
       <WorkToBuild>135</WorkToBuild>
     </statBases>
@@ -16,8 +18,8 @@
     <Fertility>0</Fertility>
     <constructEffect>ConstructDirt</constructEffect>
     <AcceptTerrainSourceFilth>True</AcceptTerrainSourceFilth>
-    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
-  </TerrainDef>
+    <terrainAffordanceNeeded>GrowSoil</terrainAffordanceNeeded>
+    </TerrainDef>
 
 
 
@@ -28,14 +30,13 @@
 		<label>dirt path</label>
 		<Description>Simple dirt pathway</Description>
 		<texturePath>Terrain/Surfaces/DirtPath</texturePath>
-		<EdgeType>Hard</EdgeType>
-		<RenderPrecedence>70</RenderPrecedence>
+		<EdgeType>FadeRough</EdgeType>
+		<RenderPrecedence>335</RenderPrecedence>
 		<statBases>
-			<Beauty>1</Beauty>
-			<WorkToBuild>10</WorkToBuild>
+		<Beauty>1</Beauty>
+		<WorkToBuild>15</WorkToBuild>
 		</statBases>
-		<CostList>
-		</CostList>
+		<CostList></CostList>
 	</TerrainDef>
 
 </TerrainDefs>
