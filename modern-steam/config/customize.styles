@@ -1,0 +1,60 @@
+"customize.styles"
+
+  {
+styles
+  {
+
+PageTab
+  {
+  textcolor="btc2" // Modern-Steam color
+  //textcolor="white"  // Alternate color
+      render_bg
+    {
+    // background gradient
+      1="gradient( x0, y0 , x1, y1 - 2, bfd, bfd )" // Modern-Steam color
+      //1="gradient( x0, y0 , x1, y1 - 2, ppb, bpb )" // Alternate color
+
+    }
+
+  }
+
+
+  PageTab:selected
+  {
+  textcolor="btc" // Modern-Steam color
+  //textcolor="white" // Alternate color
+  render_bg
+    {
+      // background gradient
+      1="gradient( x0, y0 , x1, y1 - 2, bfd, bfl )" // Modern-Steam color
+      //1="gradient( x0, y0 , x1, y1 - 2, ppb, bpb )" // Alternate color
+    }
+  }
+
+
+  PageTab:hover
+  {
+  textcolor="btc" // Modern-Steam color
+  //textcolor="white"  // Alternate color
+  render_bg
+  {
+// background gradient
+1="gradient( x0, y0 , x1, y1 - 2, bfd, bfl )" // Modern-Steam color
+//1="gradient( x0, y0 , x1, y1 - 2, ppb, bpb )" // Alternate color
+  }
+  }
+
+  PageTab:selected:hover
+  {
+  textcolor="btc" // Modern-Steam color
+  //textcolor="white"  // Alternate color
+  render_bg
+    {
+      // background gradient
+      1="gradient( x0, y0 , x1, y1 - 2, bfd, bfl )" // Modern-Steam color
+      //1="gradient( x0, y0 , x1, y1 - 2, ppb, bpb )" // Alternate color
+
+    }
+  }
+  }
+  }

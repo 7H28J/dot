@@ -4,7 +4,7 @@
 	{
 		mostrecent_area { controlname="CAchievementsMostRecentPanel" style="mostrecent" }
 
-		mostrecent_label { controlname="Label" style="mostrecent_label" labeltext="#steam_achievement_mostrecent" } 
+		mostrecent_label { controlname="Label" style="mostrecent_label" labeltext="#steam_achievement_mostrecent" }
 		mostrecent_background { controlname="Label" style=achievementimagebg zpos="0" labeltext="" mouseinputenabled=0 }
 		mostrecent_image { controlname="ImagePanel" zpos=-1 style="mostrecent_image" }
 		mostrecent_name { controlname="Label" style="mostrecent_name" labeltext="" }
@@ -18,7 +18,7 @@
 	{
 		// ProgressBarMarings must be the combined left+right margin of the actual bar from it's container
 		GameDetailsAchievements.ProgressBarMargins "8"
-		
+
 		Tooltip.Anchor=Parent
 	}
 	styles
@@ -32,8 +32,8 @@
 		{
 			bgcolor=none
 			inset="0 0 0 0"
-      		image="graphics/achievementbg_recent"    
-     		
+      		image="graphics/achievementbg_recent"
+
 		}
 
 		mostrecent_label
@@ -42,7 +42,7 @@
 			textcolor="Text"
 			font-weight=400
 		}
-		
+
 		mostrecent_name
 		{
 			font-size=16
@@ -60,18 +60,22 @@
 			render_bg
 			{
 			// lines around
-			1="fill( x0, y0, x1, y0 + 1, ButtonBorderDisabled )"  // top
-			2="fill( x0, y1 - 1, x1, y1, ButtonBorderDisabled )"  // bottom
-			3="fill( x0, y0 + 1, x0 + 1, y1 - 1, ButtonBorderDisabled )"  // left
-			4="fill( x1 - 1, y0 + 1, x1, y1 - 1, ButtonBorderDisabled )"  // right
-	
+			1="fill( x0, y0, x1, y0 + 1, none )"  // top
+			2="fill( x0, y1 - 1, x1, y1, none )"  // bottom
+			3="fill( x0, y0 + 1, x0 + 1, y1 - 1, none )"  // left
+			4="fill( x1 - 1, y0 + 1, x1, y1 - 1, none )"  // right
+
 			}
 		}
 
 		progressbarimage
 		{
-			bgcolor="focus"
-			render_bg = {}
+			bgcolor="none"
+			render_bg
+			{
+			        //1="gradient_horizontal( x0, y0 , x1, y1 - 0, ppb, bpb )" // alternate color
+							1="gradient_horizontal( x0, y0 , x1, y1 - 0, lbt, lbt )" // Modern-Steam color
+			}
 		}
 	}
 

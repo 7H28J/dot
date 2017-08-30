@@ -5,17 +5,17 @@
 		achievementsdetails { controlname="CGamesPage_Details_Achievements" style="achievementsdetails" }
 
 		headerlabel { controlname="Label" style="gamedetails-headerlabel" labeltext="#Steam_Achievements" }
-		
+
 		mostrecent_area { controlname="CAchievementsMostRecentPanel" }
 		everythinglabel { controlname="Label" style="everythinglabel" labeltext="#Steam_EverythingAchieved" }
-		locked_area { controlname="CAchievementsLockedPanel" }	
+		locked_area { controlname="CAchievementsLockedPanel" }
 
 		viewall	{ controlname="Button" labeltext="#Steam_ViewAllAchievements" command="ViewAllAchievements" }
 	}
 
 	colors
 	{
-		
+
 
 		// Extra spacing beyond the flowing elements to account for header and button at the bottom
 		GameDetailsAchievements.ExtraVerticalSpacing "75"
@@ -25,29 +25,45 @@
 		// need adjustment.
 		GameDetailsAchievements.EverythingExtraSpacing "6"
 		RichText.InsetX "0"
-		RichText.InsetY "3" 
+		RichText.InsetY "3"
 	}
 
 	styles
 	{
-		achievementsdetails 
-		{ 
-			bgcolor=BackgroundStart
+		label
+		{
+			bgcolor=lhbg
+		}
+
+		achievementsdetails
+		{
+			bgcolor=lbg
 		}
 
 		everythinglabel
 		{
 			textcolor="Text"
 			font-size=15
-		}	
+		}
+
+		button
+		{
+			font-size=14
+			font-weight=400
+			bgcolor=none
+			textcolor=lbt
+			font-style=underline
+			render_bg {}
+		}
 
 	}
 
 	layout
 	{
+		region { name=header margin=0 margin-top=1 width=max height=max }
 		region { name=body margin=10 width=max height=max }
+		place { region=header control=headerlabel width=max }
 
-		place { region=body control=headerlabel width=max }
 		place { region=body control=mostrecent_area,everythinglabel,locked_area dir=down y=25 width=max }
 
 		place { region=body control=viewall align=bottom margin-bottom=5 }

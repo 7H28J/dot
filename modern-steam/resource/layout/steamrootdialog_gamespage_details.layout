@@ -4,20 +4,20 @@
 	{
 		GamesList
 		{
-			tabposition=1 
+			tabposition=1
 		}
-		
+
 		DetailsBorder { controlname=Panel style="DetailsBorderPanel" zpos="-1" }
 
-		// Header image, plus overlays 
+		// Header image, plus overlays
 		headerimagea { controlname="ImagePanel" style="headerimage" zpos="-4" visible=1 scaling="none" horizontal-align=left vertical-align=top }
 		headerimageb { controlname="ImagePanel" style="headerimage" zpos="-4" visible=1 scaling="none" horizontal-align=left vertical-align=top }
 
 		// Header text labels
 		gametitleheader { controlname="CDetailsGameTitleHeaderPanel" zpos="2" }
 		gamesubheader { controlname="CDetailsGameSubHeaderPanel" zpos="2" }
-		
-		linkslabel { controlname="Label" labeltext="#Steam_Links" style="rightcolumnheadertext" } 
+
+		linkslabel { controlname="Label" labeltext="#Steam_Links" style="rightcolumnheadertext" }
 		sendguestpasslink { controlname="URLLabel" labeltext="#steam_send_guestpass" style="rightcolumnlink" tabposition=7 command="SendGuestPass" }
 		achievementslink { controlname="URLLabel" labeltext="#Steam_Achievements" style="rightcolumnlink" }
 		forumlink { controlname="URLLabel" labeltext="#Steam_Forums" style="rightcolumnlink" }
@@ -89,32 +89,32 @@
 				padding-left=4
 				padding-right=2
 			}
-		
+
 		"GamesPage_Details ListPanelInterior"
 		{
 			bgcolor="none"
 			inset="1 1 0 0"
 			render {}
-			render_bg {} 
+			render_bg {}
 		}
-		
+
 		"GamesPage_Details ListPanelInterior:scrollbar"
-			{     
+			{
 			inset="1 1 -2 0"
 			bgcolor=none
-			
+
 			render_bg {}
 			}
-			
+
 		ListPanelSectionHeader
-		{     
+		{
 			inset="2 0 0 0"
 			textcolor="lbt"
 			font-style="uppercase"
 			render_bg
 			{
 				//0="gradient_horizontal( x0 - 1, y0, x0 + 250, y1 - 1, propertysheetbg, Friends.ListHeaderFadeOut  )"
-			}    
+			}
 		}
 
 		"GamesPage_Details ListPanelDragger"
@@ -130,13 +130,13 @@
 			font-size=14
 			inset="2 2 0 0"
 			render {}
-			render_bg 
+			render_bg
 			{
 				0="gradient_horizontal( x0+1, y0+2, x1, y1 + 1, ButtonFace, none )"
 			}
 
 		}
-		
+
 		"GamesPage_Details ListPanelColumnHeader" [$OSX]
 		{
 			bgcolor="none"
@@ -146,18 +146,18 @@
 
 
 		}
-		
-		"CGamesListPanel ListPanelColumnSelectButton"   
+
+		"CGamesListPanel ListPanelColumnSelectButton"
 		{
        		inset="-3 3 0 0"
         		render {
           		5="image( x0 + 3, y0 + 3, x1, y1, graphics/icon_collapse )"
-        		}   
+        		}
         		render_bg {
         			1="fill( x0 + 1, y0, x1 - 1, y1, none )"
         		}
 		}
-		
+
 		headerimage { bgcolor="0 0 0 0" }
 
 
@@ -172,7 +172,7 @@
 			padding-top=12
 			padding-left=10
 		}
-		
+
 		rightcolumnheadertext-red
 		{
 			inset="-9 0 0 0"
@@ -187,7 +187,7 @@
 
 		rightcolumnheadertext-green
 		{
-			
+
 			inset="-9 0 0 0"
 			font-style=uppercase;
 			font-size=17
@@ -214,27 +214,23 @@
 		{
 			inset="0 0 0 0"
 			font-size=14
-			font-weight=500
+			font-weight=400
 			font-style=normal
-			textcolor=btc
+			textcolor=lbt
 			font-family=basefont
-			padding=10
-			render_bg
-			{
-				1="fill(x0,y0,x1,y1,backgroundstartsubtle)"
-			}
+			padding=7
 		}
 
 		rightcolumnlink:hover
 		{
-			textcolor=btc2
+			textcolor=lbt2
 		}
 
 		rightcolumnlink:disabled
 		{
 			textcolor="TextDisabled"
 		}
-		
+
 		rightcolumntag
 		{
 			inset="-9 0 0 0"
@@ -246,7 +242,7 @@
 			font-family=basefont
 			padding-bottom=0
 		}
-		
+
 		DetailsBorderPanel
 		{
 			bgcolor ="sbg"
@@ -257,34 +253,34 @@
 	{
 		region	{ name="details" y=0 x=262 width=max height=max overflow=scroll-vertical margin-left=0 margin-right=-1 }
 		region  { name="subheader" region=details y=144 height=max width=max overflow=allow-vertical }
-		region  { name="topbar" region=details y=210 height=max width=max overflow=allow-vertical }
- 
+		region  { name="topbar" region=details y=220 height=max width=800 overflow=allow-vertical }
+
 		//List
 		place 	{ control=GamesList width=262 height=max margin=0 margin-top=-1 margin-bottom=-1 margin-right=10 }
 
-		//Empty List Text 
+		//Empty List Text
 		place	{ control=emptylisttext x=262 margin-left=8 y=0 width=max height=max }
-		
+
 		//Header
 		place 	{ control=gametitleheader region=details x=3 width=max align=left-center height=144 dir=down margin-right=10 }
 
 		//Panels y -> 144
 		region  { name="detailsbody" region=details y=256 height=max width=max overflow=allow-vertical }
-		place 	{ region=detailsbody control=turnnotifications,friendsdetails,achievementsdetails,communityfilesdetails,screenshotsdetails,dlcdetails,clouddetails,newsdetails, dir=down width=max margin-right=10 margin-left=2 margin-top=10 margin-down=5 spacing=10 }
+		place 	{ region=detailsbody control=turnnotifications,friendsdetails,achievementsdetails,communityfilesdetails,screenshotsdetails,dlcdetails,clouddetails,newsdetails, dir=down width=800 margin-right=10 margin-left=2 margin-top=10 margin-down=5 spacing=10 }
 
-		place	
-		{ 
+		place
+		{
 			control=*taglink,sendguestpasslink,storelink,gamehublink,forumlink,ogglink,newslink,dlclink,cdkeylink,manuallink,guidelink,guideslink,supportlink,recommendlink
 			region=topbar
 			dir=right
 			width=max
-			margin-left=-5
+			margin-left=-2
 			margin-right=10
 			margin-top=10
 		}
-		
-		place	
-		{ 
+
+		place
+		{
 			control=gamesubheader
 			region=subheader
 			dir=right
@@ -294,11 +290,11 @@
 			margin-top=10
 			margin-down=5
 		}
-		
+
 		place{ control="linkslabel,tagslabel,edittagslink,achievementslink" region=hidden}
 
-		
-		
+
+
 		place{ control="linkslabel,tagslabel,edittagslink" region=hidden}
 
 		//Background Images
@@ -308,7 +304,7 @@
 
 		//?
 		place 	{ control=DetailsBorder y=1 x=1 width=max height=max }
-		
+
 		//Hidden
 		region { name=hidden width=1 overflow=none }
 		place { controls=welcomedetails,nonsteamdetails region=hidden }

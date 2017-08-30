@@ -15,7 +15,7 @@
 	{
 		CDetailsGameTitleHeaderPanel
 		{
-			bgcolor=BackgroundStart
+			bgcolor=none
 		}
 
 		headertextlarge

@@ -28,7 +28,7 @@
 	styles
 	{
 		lockedarea
-		{ 
+		{
 			minimum-height="76"
 		}
 
@@ -43,35 +43,35 @@
 		{
 			inset="-3 0 0 0"
 			font-size=18
-			textcolor="Text2"
+			textcolor="lbt"
 			font-family=basefont
 		     	render_bg
 		     	{
 			        // background fill
-			        0="gradient( x0, y0 - 2, x1 - 1, y1 + 1, buttonface2, propertysheetbg )"        
+			        0="gradient( x0, y0 - 2, x1 - 1, y1 + 1, none, none )"
     			}
-    		}   
-    		   
+    		}
+
 		achievementlabelmore:hover
 		{
 			inset="-3 0 0 0"
 			font-size=18
-			textcolor="Text"
+			textcolor="lbt2"
 			font-family=basefont
 		    	 render_bg
 		    	 {
 		      	  	// background fill
-		       		0="gradient( x0, y0 - 2, x1 - 1, y1 + 1, buttonfaceactive, propertysheetbg )"
+		       		0="gradient( x0, y0 - 2, x1 - 1, y1 + 1, none, none )"
     			}
-    		}     
+    		}
 
 		achievementimagebg
 		{
 			bgcolor=none
 			inset="1 0 0 0"
-      		image="graphics/icon_empty"
+      		image="graphics/achievementbg"
 		}
-	
+
 	}
 
 	layout
@@ -79,14 +79,14 @@
 		region { name=body margin=0 width=max height=max }
 		region { name=images region=body x=0 y=20 margin=2 width=max height=48 }
 
-		
+
 		place { region=body control=imageexplanation y=0 }
 
 
-			
-		place 
-		{ 
-			region=images 
+
+		place
+		{
+			region=images
 			control=*achievementimage,achievementlabelmore
 			dir=right
 			width=45

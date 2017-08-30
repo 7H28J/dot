@@ -4,18 +4,31 @@
 	colors
 
 	{
-		
+
 		mbg="27 40 56 255" // main background
 		sbg="22 32 45 255" // sub background
 		sbg2="19 28 40 255" // sub background 2
-		
+
+		lhbg="31 47 66 235" // library header background
+		lbg="16 24 34 255" // library background
+
+		ppb="184 129 255 255" // purple progress bar
+		bpb="135 161 254 255" // blue progress bar
+
 		linkcolor="163 207 143 255"
+
+		btnt="103	193	245 255"
+		btnbg="103	193	245 51"
+		btnbg2="103	193	245 102"
 
 		btc="210 210 210 255" // base text color
 		btc2="143 152 160 255" // dark base text color
 		btc3="180 180 180 255" // "friends_chat_text_self"
 		lbt="134 181 217 255" // light blue text
-		
+
+		lbt2="173 205 229 255" // light blue text highlight (L)
+		lbt3="95 157 205 255" // light blue text highlight (D)
+
 		bfl="108 149 65 255" // button light green
 		bfd="75 103 45 255" // button dark green
 		blb="103 193 245 255" // button light blue active
@@ -25,16 +38,17 @@
 
 		flb="134 181 217 255" // friends online blue
 		flg="140 179 89 255" // friends ingame green
-		
+
 		bmb="65 122 155 255" // Drop down menus
 		bmh="81 149 196 255" // Drop down menus highlight
 		mtc="103 193 245 255" // Menu text colors
-		
+
 		// testing
-		dbg="24 31 39 255" // dark background
-		tbg="31 47 66 235" // test background for the library
-		tbg2="39 59 82 200" // test background for the library
-		
+		dbg="24 31 39 255" // dark background -- FIND AND REMOVE ALL.
+		tbg2="39 59 82 200" // test background for the library -- FIND AND REMOVE ALL.
+
+		//tbg3="16 24 34 255" // FIND AND REMOVE ALL.
+
 		// 2017 Store inspired menu
 		mlb="227 234 239 255"
 		mdb="199 213 224 255"

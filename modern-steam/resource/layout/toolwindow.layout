@@ -1,12 +1,14 @@
 "resource/layout/toolwindow.layout"
+
 {
+
 	controls
 	{
 		// the container
 		ToolWindowSheet	{	controlname="PropertySheet" }
-	} 
-	
-		
+	}
+
+
 	styles
 	{
 
@@ -16,7 +18,7 @@
 		}
 
 		ToolWindow
-		{			
+		{
 			bgcolor="mbg"
 			render_bg
 			{
@@ -27,9 +29,9 @@
 			  	//4="gradient( x0 + 8, y0 + 50, x1 - 8, y1, dialogbg, DialogBG )" [$OSX]
 			}
 		}
-		
+
 		ToolWindow:framefocus
-		{			
+		{
 			bgcolor="mbg"
 			render_bg
 			{
@@ -40,32 +42,32 @@
 			    //4="gradient( x0 + 8, y0 + 50, x1 - 8, y1, dialogbg, DialogBG )" [$OSX]
 			}
 		}
-		
-		
+
+
 		Button
-	  {     
+	  {
 	  	textcolor="0 0 0 0" // don't render the + as text
 			render_bg
 			{
 				// background fill
 				0="fill( x0, y0, x1 - 1, y1 - 1, propertysheetbg )"
-				1="image(x0 + 6, y0 + 7, x1, y1 - 1, graphics/new_tab)"	
+				1="image(x0 + 6, y0 + 7, x1, y1 - 1, graphics/new_tab)"
 			}
 	  }
-	  
+
 	  Button:hover
-		{     
+		{
 			render_bg
 			{
 				// background fill
-				0="fill( x0, y0, x1 - 1, y1 - 1, buttonfaceactive )"	
-				1="image(x0 + 6, y0 + 7, x1, y1 - 1, graphics/new_tab)"				
+				0="fill( x0, y0, x1 - 1, y1 - 1, buttonfaceactive )"
+				1="image(x0 + 6, y0 + 7, x1, y1 - 1, graphics/new_tab)"
 			}
 		}
 
-	  
+
 	  MenuButton
-	  { 
+	  {
 	  	padding-right=4
 		 	bgcolor=none
 			render_bg
@@ -74,9 +76,9 @@
 				0="fill( x0, y0, x1 - 1, y1 - 1, propertysheetbg )"
 			}
 	  }
-	  
+
 	  TabMenuButtonFlash
-	  { 
+	  {
 	   	bgcolor=none
 			render_bg
 			{
@@ -84,40 +86,12 @@
 				0="fill( x0, y0, x1 - 1, y1 - 1, PropertySheet.FlashTabColor )"
 			}
 	  }
-	  
+
 	  TabMenuItemFlash
 	  {
 	  	textcolor="PropertySheet.FlashTabColor"
 	  }
-	  
-	 	PageTab
-		{
-			font-size=14
-			font-style=regular
-			textcolor=btc2
-    }
-    
-	  PageTab:hover
-	  {
-			font-size=14
-			font-style=regular
-			textcolor=btc
-		}
-  
-		PageTab:selected:hover
-		{
-			font-size=14
-			font-style=regular
-			textcolor=btc
-		}
-	    
-		PageTab:selected
-		{
-			font-size=14
-			font-style=regular
-			textcolor=btc
-	  }
-    
+
 	}
 
 	layout
