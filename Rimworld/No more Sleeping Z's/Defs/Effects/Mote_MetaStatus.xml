@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!--=============== Thrown status ==============-->
+
+  <ThingDef ParentName="MoteBase">
+    <defName>Mote_SleepZ</defName>
+    <graphicData>
+      <texPath>Things/Mote/Z</texPath>
+    </graphicData>
+    <altitudeLayer>MetaOverlays</altitudeLayer>
+    <mote>
+      <fadeInTime>0.00</fadeInTime>
+      <solidTime>0.00</solidTime>
+      <fadeOutTime>0.00</fadeOutTime>
+    </mote>
+  </ThingDef>
+
+</Defs>
