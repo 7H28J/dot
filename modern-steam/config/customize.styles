@@ -6,7 +6,7 @@ styles
 
 PageTab
   {
-  textcolor="btc2" // Modern-Steam color
+  textcolor="btc" // Modern-Steam color
   //textcolor="white"  // Alternate color
       render_bg
     {

@@ -321,7 +321,8 @@
 		AddGameButton
 		{
 			font-size=14
-			font-size=13 [$OSX]
+			font-size=14 [$OSX]
+			font-weight=400
 			font-family=basefont
 			textcolor="lbt"
 			padding-right=30
@@ -335,7 +336,7 @@
 
 		AddGameButton:hover
 		{
-			textcolor="white"
+			textcolor="lbt"
 			render_bg
 			{
 				0="image( x0 + 2, y0 + 7, x1, y1, graphics/icon_collapse_over )"
@@ -413,8 +414,8 @@
 			bgcolor="none"
 			font-family=basefont
 			font-size=14
-			font-weight=500
-			font-style=regular,uppercase
+			font-weight=400
+			font-style=regular,uppercase,antialias
 			padding-top=6
 			padding-left=24
 			padding-bottom=30
@@ -426,8 +427,8 @@
 			bgcolor="none"
 			font-family=basefont
 			font-size=14
-			font-weight=500
-			font-style=regular,uppercase
+			font-weight=400
+			font-style=regular,uppercase,antialias
 			padding-top=6
 			padding-left=24
 			padding-bottom=30
@@ -450,7 +451,8 @@
 			bgcolor="none"
 			font-family=basefont
 			font-size=14
-			font-style=regular
+			font-weight=400
+			font-style=regular,antialias
 		}
 
 		online_friends [$OSX]
@@ -459,7 +461,8 @@
 			bgcolor="none"
 			font-family=basefont
 			font-size=14
-			font-style=regular
+			font-weight=400
+			font-style=regular,antialias
 		}
 
 		online_friends:disabled
@@ -804,17 +807,17 @@
 
 		inboxmenuitem
 		{
-			textcolor=inbox_inactive_text
+			textcolor=mtc
 		}
 
 		inboxmenuitem_active
 		{
-			textcolor=label
+			textcolor=mtc
 		}
 
 		inboxmenuitem_active:hover
 		{
-			textcolor=white
+			textcolor=mtc
 		}
 		AccountURLStyle
 		{

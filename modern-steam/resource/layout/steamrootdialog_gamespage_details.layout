@@ -218,7 +218,7 @@
 			font-style=normal
 			textcolor=lbt
 			font-family=basefont
-			padding=7
+			padding=12
 		}
 
 		rightcolumnlink:hover
@@ -237,7 +237,7 @@
 			font-size=15
 			font-style=normal
 			textcolor=none
-			padding-left=5
+			padding-left=-50
 			padding-top=0
 			font-family=basefont
 			padding-bottom=0
@@ -256,7 +256,7 @@
 		region  { name="topbar" region=details y=220 height=max width=800 overflow=allow-vertical }
 
 		//List
-		place 	{ control=GamesList width=262 height=max margin=0 margin-top=-1 margin-bottom=-1 margin-right=10 }
+		place 	{ control=GamesList width=262 height=max margin=0 margin-top=-1 margin-bottom=0 margin-right=10 }
 
 		//Empty List Text
 		place	{ control=emptylisttext x=262 margin-left=8 y=0 width=max height=max }
@@ -270,13 +270,17 @@
 
 		place
 		{
-			control=*taglink,sendguestpasslink,storelink,gamehublink,forumlink,ogglink,newslink,dlclink,cdkeylink,manuallink,guidelink,guideslink,supportlink,recommendlink
+			control=*taglink,storelink,gamehublink,forumlink,newslink,cdkeylink,guideslink,supportlink,recommendlink
 			region=topbar
 			dir=right
 			width=max
 			margin-left=-2
 			margin-right=10
 			margin-top=10
+			render_bg
+			{
+				//0="fill( x0 + 1, y1 - 1, x1 - 1, y1, lbt )"
+			}
 		}
 
 		place
@@ -291,7 +295,7 @@
 			margin-down=5
 		}
 
-		place{ control="linkslabel,tagslabel,edittagslink,achievementslink" region=hidden}
+		place{ control="linkslabel,tagslabel,edittagslink,achievementslink,manuallink,guidelink,dlclink,sendguestpasslink,ogglink" region=hidden}
 
 
 

@@ -19,7 +19,7 @@
 	{
 		communityfilesdetails
 		{
-			bgcolor=BackgroundStart
+			bgcolor=lbg
 		}
 
 		infolabel

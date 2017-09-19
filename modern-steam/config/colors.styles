@@ -9,6 +9,9 @@
 		sbg="22 32 45 255" // sub background
 		sbg2="19 28 40 255" // sub background 2
 
+		sbbg="40 71 94 127" // scrollbar background
+		sbbg2="40 71 94 255" // scrollbar hover background
+
 		lhbg="31 47 66 235" // library header background
 		lbg="16 24 34 255" // library background
 

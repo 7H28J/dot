@@ -277,7 +277,7 @@
 			font-family=basefont
 			font-size=16
 			font-weight=400
-			textcolor="White"
+			textcolor="btnt"
 			font-style=uppercase
 			bgcolor=none
 
@@ -288,7 +288,7 @@
 			render_bg
 			{
        				// background fill
-				0="gradient( x0, y0+1, x1, y1-1, bfd, bfd )"
+				0="gradient( x0, y0+1, x1, y1-1, btnbg2, btnbg2 )"
 			}
 		}
 
@@ -299,7 +299,7 @@
 			font-family=basefont
 			font-size=16
 			font-weight=400
-			textcolor="White"
+			textcolor="btnt"
 			font-style=uppercase
 			bgcolor=none
 			render
@@ -310,7 +310,7 @@
 			render_bg
 			{
 				// background fill
-				0="gradient( x0, y0+1, x1, y1-1, bfd, bfd )"
+				0="gradient( x0, y0+1, x1, y1-1, btnbg2, btnbg2 )"
 			}
 		}
 

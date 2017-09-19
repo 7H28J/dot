@@ -36,19 +36,19 @@
 		{
 
 			font-size=16
-			textcolor=Text
+			textcolor=lbt
 		}
 
 		achievementlabelmore
 		{
 			inset="-3 0 0 0"
 			font-size=18
-			textcolor="lbt"
+			textcolor="btnt"
 			font-family=basefont
 		     	render_bg
 		     	{
 			        // background fill
-			        0="gradient( x0, y0 - 2, x1 - 1, y1 + 1, none, none )"
+			        0="gradient( x0, y0 - 2, x1 - 1, y1 + 1, btnbg, btnbg )"
     			}
     		}
 
@@ -56,12 +56,12 @@
 		{
 			inset="-3 0 0 0"
 			font-size=18
-			textcolor="lbt2"
+			textcolor="white"
 			font-family=basefont
 		    	 render_bg
 		    	 {
 		      	  	// background fill
-		       		0="gradient( x0, y0 - 2, x1 - 1, y1 + 1, none, none )"
+		       		0="gradient( x0, y0 - 2, x1 - 1, y1 + 1, btnbg2, btnbg2 )"
     			}
     		}
 

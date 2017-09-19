@@ -133,7 +133,7 @@
 		EmoticonMenuItemStyle:hover
 		{
 			textcolor=white
-			bgcolor=nonef
+			bgcolor=none
 		}
 
 		EmoticonMenuItemStyle:selected
@@ -161,6 +161,37 @@
 		{
 			font-size=16
 		}
+
+		ScrollBarHandle  //vertical scrollbar thumb
+		{
+		bgcolor=none
+		//image="graphics/icon_scroll_handle"
+		render_bg
+		{
+			// center fill
+			0="fill( x0 + 2, y0 + 6, x1 - 4, y1 - 5, none )"
+		}
+		}
+
+		"ScrollBarHandle:hover"
+		{
+		//image="graphics/icon_scroll_handle_over"
+		render_bg
+		{
+			// center fill
+			0="fill( x0 + 2, y0 + 6, x1 - 4, y1 - 5, none )"
+		}
+		}
+
+		"ScrollBarHandle:active"
+		{
+		//image="graphics/icon_scroll_handle_over"
+		render_bg
+		{
+			// center fill
+			0="fill( x0 + 2, y0 + 6, x1 - 4, y1 - 5, none )"
+		}
+		}
 }
 
 	layout
@@ -176,7 +207,7 @@
 
 	region { name=bottomrow align=bottom height=58 }
 	//place { control="ChatActionsButton" align=bottom-right margin-bottom=53 margin-right=48 width=36 height=10 dir=up }
-	place { control="EmoticonButton" align=bottom-right margin-bottom=52 margin-right=-8 width=8 height=8 }
+	place { control="EmoticonButton" align=bottom-right margin-bottom=53 margin-right=-8 width=8 height=8 }
 	place { control="SendButton" region=bottomrow spacing=8 height=0 align=right margin-top=12 margin-right=8 }
 	place { control="TextEntry" region=bottomrow height=42 width=max margin-right=0 margin-left=-5 margin-top=8 }
 	place { control="StatusLabel" align=bottom width=max margin-left=4 margin-right=17 margin-bottom=54 }

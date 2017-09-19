@@ -29,20 +29,34 @@
 			bgcolor=lbg
 		}
 
-		button
+		Button
 		{
-			font-size=14
-			font-weight=400
-			bgcolor=none
-			textcolor=lbt
-			font-style=underline
-			render_bg {}
+		font-family=basefont
+		font-size=14
+		font-weight=400
+		textcolor="btnt"
+		font-style=uppercase
+		bgcolor=none
+			render_bg
+			{
+				// background fill
+				0="gradient( x0, y0, x1, y1, btnbg, btnbg )"
+			}
+		}
+
+		Button:hover
+		{
+			textcolor=white
+			render_bg
+			{
+				 0="gradient( x0, y0, x1, y1, btnbg2, btnbg2 )"
+			}
 		}
 	}
 
 	layout
 	{
-		region { name=header margin=0 margin-top=1 width=max height=max }
+		region { name=header margin=0 width=max height=max }
 		region { name=body margin=10 width=max height=max }
 		place { region=header control=headerlabel width=max }
 

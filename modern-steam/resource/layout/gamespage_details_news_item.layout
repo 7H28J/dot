@@ -16,68 +16,68 @@
 
 		// Override base style rich text x inset inside this control
 		RichText.InsetX "0"
-		RichText.InsetY "3" 
+		RichText.InsetY "3"
 	}
 	styles
 	{
 		title_label
 		{
-			font-size="17"
-			textcolor="Text"
+			font-size="14"
+			textcolor="btc"
 			font-weight=800
 		}
 
 		date_and_author
 		{
 			font-size=14
-			textcolor="label2"
+			textcolor="lbt"
 		}
 
 		newsitem_body
 		{
-			textcolor="Label"
-			selectedtextcolor="Label"	
+			textcolor="btc"
+			selectedtextcolor="btc2"
 			render_bg {}
-			font-size=15
+			font-size=14
 			font-family=basefont
 		}
-		
+
 		"newsitem_body url"
 		{
-			font-size=15
+			font-size=14
+			textcolor=white
 			font-style="underline"
-			selectedtextcolor="Label"	
+			selectedtextcolor="white"
 		}
-		
+
 		"newsitem_body url:hover"
 		{
-			font-size=15
+			font-size=14
 			font-style="underline"
-			textcolor="text"
-			selectedtextcolor="label"	
+			textcolor="white"
+			selectedtextcolor="white"
 		}
-		
+
 		"newsitem_body bold"
 		{
 			font-weight=1000
 			textcolor="Label"
-			selectedtextcolor="Label"	
+			selectedtextcolor="Label"
 		}
-		
+
 		more_link
 		{
-			font-size=15
+			font-size=14
 			font-style="underline"
-			font-weight=400
 			font-family=basefont
-			textcolor="label"
-			selectedtextcolor="Label"	
+			textcolor="white"
+			selectedtextcolor="white"
 		}
-		
+
 		more_link:hover
 		{
 			font-style="underline"
-			textcolor="text"
+			textcolor="white"
 		}
 	}
 

@@ -16,7 +16,7 @@
 
 			"paintbackground"   "1"
 			"settitlebarvisible"    "1"
-			style="FriendsPanel"    
+			style="FriendsPanel"
 			closeonescape=1
 		}
 
@@ -33,7 +33,7 @@
 			"xpos"    "0"
 			"ypos"    "8"
 			style="FriendsTitle"
-			"textAlignment"   "west" 
+			"textAlignment"   "west"
 			"textAlignment"   "center" [$OSX]
 		}
 
@@ -69,7 +69,7 @@
 			"PinCorner"   "0"
 			"enabled"   "1"
 			"paintbackground"   "1"
-			zpos="-1" 
+			zpos="-1"
 		}
 
 		"FriendPanelSelf"
@@ -140,13 +140,13 @@
 
 			"paintbackground"   "1"
 		}
-		
+
 		friends_search { ControlName=TextEntry maxchars=16 hintText="#steam_library_search" style="FriendsSearch" unicode=1 tabposition=2 }
-		friends_search_icon	{ ControlName=Label style="FriendsSearchIcon" zpos="4" }		
-		
+		friends_search_icon	{ ControlName=Label style="FriendsSearchIcon" zpos="4" }
+
 	}
 
-  
+
 	styles
 	{
 
@@ -156,21 +156,21 @@
 		}
 
 		FriendsPanel
-		{			
+		{
 			bgcolor="mbg"
 			render_bg
 			{
 				//1="image( x0, y0, x1, y1, graphics/clienttexture2)"
 			}
-		}		
-		
+		}
+
 		RootMenu
 		{
 			bgcolor="none"
-		} 
+		}
 
-				
-		FriendsTitle 
+
+		FriendsTitle
 		{
 			inset="0 0 0 0"
 		}
@@ -194,18 +194,18 @@
 			bgcolor="none"
 			inset="0 9 0 0"
 		}
-		
+
 		Menu
     {
 		bgcolor="dialogbg"
 		padding-right=4
 		inset="2 2 2 2"
-      
+
 				render_bg
 				{
 					0="gradient( x0 + 1, y0 + 1, x1 - 1, y0+140, MenuBG1, MenuBG2  )"
 					1="fill( x0 + 1 , y0 + 140, x1 - 1, y1 - 1, MenuBG2  )"
-		
+
 					// lines around
 				2="fill( x0 + 1, y0, x1 - 1, y0 + 1, clientbg )"  // top
 				3="fill( x0 + 1, y1 - 1, x1 - 1, y1, clientbg )"  // bottom
@@ -213,7 +213,7 @@
 				5="fill( x1 - 1, y0 + 1, x1, y1 - 1, clientbg )"  // right
 				}
 		}
-		
+
 		"MenuBar MenuButton"
 		{
 			padding-right=14
@@ -227,7 +227,7 @@
 
 		"MenuBar MenuButton:hover"
 		{
-			textcolor="btc"
+			textcolor="btc2"
 			render
 			{
 				0="image( x1-18, y0 + 11, x1-0, y1, graphics/icon_down_hover )"
@@ -236,59 +236,58 @@
 
 		"MenuBar MenuButton:selected"
 		{
+			textcolor="lbt"
 			render
 			{
 				0="image( x1-18, y0 + 11, x1-0, y1, graphics/icon_down_hover )"
 			}
 		}
-		
+
 		FriendsSearch
 		{
 			padding-left=-4
 			padding-top=1
 			font-family=basefont
 			font-size=14
-			font-weight=400	
-			textcolor="lbt"	
-			render { }	
+			font-style=normal
+			font-weight=400
+			textcolor="lbt"
+			render { }
 			bgcolor=none
 			render_bg
 			{
 				// background fill
 				0="fill( x0 + 1, y0 + 1, x1+1, y1, clientgrouper )"
-	     
+
 
 				// single pixel fills in the corners
-				
+
 			}
 		}
-		
+
 		FriendsSearch:empty
 		{
-			font-style="normal"
 			textcolor="lbt"
-			
+
 		}
-		
+
 		FriendsSearch:hover
-		{	
-			textcolor="texthover"	
+		{
+			textcolor="lbt"
 		}
-		
+
 		FriendsSearch:empty:hover
 		{
-			font-style=italic
-			textcolor="texthover"
-			
+			textcolor="lbt"
+
 		}
-			
+
 		FriendsSearch:disabled
 		{
-			font-style=italic
 			textcolor="None"
-			
+
 		}
-			
+
 		FriendsSearchIcon
 		{
 			bgcolor="none"
@@ -303,7 +302,7 @@
 				0="fill( x0 + 2, y0 - 1, x1 + 2, y1 +3, dialogbg )"
 			}
 		}
-		
+
 		FriendsSearchIcon:disabled
 		{
 			bgcolor="none"
@@ -322,25 +321,25 @@
 		{
 			bgcolor=none
 			//image="graphics/icon_scroll_handle"
-			render_bg 
+			render_bg
 		{
 			// center fill
 			0="fill( x0 + 2, y0 + 6, x1 - 4, y1 - 5, none )"
 		}
     }
-       
+
 		"ScrollBarHandle:hover"
 		{
 			//image="graphics/icon_scroll_handle_over"
-			render_bg 
+			render_bg
 		{
 			0="fill( x0 + 2, y0 + 6, x1 - 4, y1 - 5, none )"
 		}
     }
-		
-		
+
+
 	}
- 	
+
  	layout
  	{
 		place 	[$OSX] { control="frame_title" align=center x=0 y=0 width=max height=20 }
@@ -358,4 +357,3 @@
  	}
 
 }
-

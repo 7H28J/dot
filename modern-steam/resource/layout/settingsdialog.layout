@@ -41,6 +41,8 @@
 			inset="6 -14 4 0"
 			minimum-width="200"
 			minimum-height="525"
+			textcolor=lbt
+			bgcolor=white
 			font-size=18
 			padding=6
 		}

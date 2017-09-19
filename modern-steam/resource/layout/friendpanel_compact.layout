@@ -1,13 +1,13 @@
 "resource/layout/friendpanel_compact.layout"
 {
 	// custom layout
-	
+
 	controls
 	{
 		MenuButton
 		{style=menuButtonStyle	}
 		AvatarOverlayImage { zpos=2 }
-		
+
 		AcceptLink { style="inviteLinkStyle" }
 		IgnoreLink { style="inviteLinkStyle" }
 		BlockLink { style="inviteLinkStyle" }
@@ -17,19 +17,19 @@
 	 CFriendPanel:selected  //only used in non-avatar view for friends
 	{
 		render_bg {
-			0="gradient_horizontal( x0 - 1, y0+ 1, x1, y0+2, focus3, none  )"
-			1="gradient_horizontal( x0 - 2, y0+2, x1, y1-2, focus3, none  )"
-			1="gradient_horizontal( x0 - 1, y1-2, x1, y1-1, focus3, none  )"
-		}	
+			0="gradient_horizontal( x0 - 1, y0+ 1, x1, y0+2, none, none  )"
+			1="gradient_horizontal( x0 - 2, y0+2, x1, y1-2, none, none  )"
+			1="gradient_horizontal( x0 - 1, y1-2, x1, y1-1, none, none  )"
+		}
 	}
-		
+
 		SelfPanel:hover
 		{
 			render_bg
 			{
 			}
-		}		    
- 
+		}
+
  		menuButtonStyle
 		{
 			minimum-width=14
@@ -38,12 +38,12 @@
 			padding-right=2
 			padding-left=1
 		}
-		
+
 		menuButtonStyle:hover
 		{
 
 			render_bg {
-			
+
 			//background
 			0="fill( x0 + 2, y0 + 1 , x1 - 1, y1 - 1, none )"
 			//lines around
@@ -51,12 +51,12 @@
 			2="fill(x1 - 1, y0 + 2, x1, y1 - 2, none )"  //right
 			}
 		}
-		
+
 		downarrow:hover
 		{
 
 			render_bg {
-			
+
 			//background
 			0="fill( x0 + 2, y0 + 1 , x1 - 1, y1 - 1, none )"
 			//lines around
@@ -65,21 +65,21 @@
 			3="image( x0, y0, x1, y1, graphics/icon_down_hover )"
 			}
 		}
-		
+
 		inviteLinkStyle
 		{
 			font-style=""
 			textcolor=Text2
 			padding-left=2
 		}
-	
+
 		inviteLinkStyle:hover
 		{
 			textcolor=White
 			font-style=underline
 		}
 	}
-	
+
 	layout
 	{
 		place { control="ClanStatusImage,NameLabel,FriendsNameInstanceLabel,CompactSeparatorLabel,StatusLabel,GameLabel,AcceptLink,IgnoreLink,BlockLink,SuggestedImage,SuggestedLabel,SuggestedInvite,SuggestedIgnore,MenuButton" x=1 y=1 spacing=4 }

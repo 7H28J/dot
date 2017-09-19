@@ -73,7 +73,7 @@
 			render_bg
 			{
 				// background fill
-				0="fill( x0, y0, x1 - 1, y1 - 1, propertysheetbg )"
+				0="fill( x0, y0, x1 - 1, y1 - 1, mbg )"
 			}
 	  }
 
@@ -83,7 +83,7 @@
 			render_bg
 			{
 				// background fill
-				0="fill( x0, y0, x1 - 1, y1 - 1, PropertySheet.FlashTabColor )"
+				0="fill( x0, y0, x1 - 1, y1 - 1, mbg )"
 			}
 	  }
 
