@@ -22,7 +22,6 @@
 ;							;
 ;		      Do NOT spam them!	       		;
 
-
 ;all
 NumpadIns::
 	{
@@ -50,7 +49,6 @@ sleep, 1000
 	}
 return
 
-
 ;forage
 NumpadLeft::
 	{
@@ -59,7 +57,6 @@ NumpadLeft::
 		SetKeyDelay, -1
 	}
 return
-
 
 ;fish
 NumpadClear::
@@ -70,7 +67,6 @@ NumpadClear::
 	}
 return
 
-
 ;mine
 NumpadRight::
 	{
@@ -80,7 +76,6 @@ NumpadRight::
 	}
 return
 
-
 ;chop
 NumpadPgDn::
 	{
@@ -89,7 +84,6 @@ NumpadPgDn::
 		SetKeyDelay, -1
 	}
 return
-
 	
 ;adv
 NumpadEnd::
@@ -109,7 +103,6 @@ NumpadDown::
 	}
 return
 
-
 ;location
 NumpadHome::
 	{
@@ -118,7 +111,6 @@ NumpadHome::
 		SetKeyDelay, -1
 	}
 return
-
 
 ;map
 NumpadUp::
@@ -129,7 +121,6 @@ NumpadUp::
 	}
 return
 
-
 ;travel
 NumpadPgUp::
 	{
@@ -137,7 +128,6 @@ NumpadPgUp::
 		SetKeyDelay, -1
 	}
 return
-
 
 ;heal / pet heal
 NumpadDel::
