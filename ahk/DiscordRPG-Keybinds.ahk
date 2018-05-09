@@ -31,7 +31,7 @@ NumpadIns::
 	}
 sleep, 1000
 	{
-		Send `;chop
+		Send `;fish
 		Send {enter}
 		SetKeyDelay, -1
 	}
