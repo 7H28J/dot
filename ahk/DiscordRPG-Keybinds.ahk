@@ -1,26 +1,40 @@
-;							;
-;							;
-; 			   KEYBINDS			;
-;			     FOR			;
-;			  DiscordRPG			;
-;							;
-;							;
-; 		NumpadIns(0) == forage			;
-; 		NumpadEnd(1) == Adv/Battle		;
-; 		NumpadDown(2) == Heal+Pet Auto		;
-; 		NumpadPgDn(3) == Run			;
-; 		NumpadLeft(4) == stats			;
-; 		NumpadClear(5) == attributes		;
-; 		NumpadRight(6) == skills		;
-; 		NumpadHome(7) == location		;
-; 		NumpadUp(8) == map			;
-; 		NumpadPgUp(9) == travel			;
-; 		NumpadDot(./del) == fish/mine/chop	;
-; 		NumpadAdd(+) == inventory		;
-; 		NumpadEnter == NPC shop			;
-;							;
-;							;
-;		      Do NOT spam them!	       		;
+|-------------------------------------------------------|
+|							|
+| 		     ~KEYBINDS~				|
+| 		       ~FOR~				|
+|		    ~DiscordRPG~			|
+|							|
+|							|
+| 	NumpadIns(0) == forage				|
+| 	NumpadEnd(1) == Adv/Battle			|
+| 	NumpadDown(2) == Heal+Pet Auto			|
+| 	NumpadPgDn(3) == Run				|
+| 	NumpadLeft(4) == stats				|
+| 	NumpadClear(5) == attributes			|
+| 	NumpadRight(6) == skills			|
+| 	NumpadHome(7) == location			|
+|	NumpadUp(8) == map				|
+| 	NumpadPgUp(9) == travel				|
+| 	NumpadDot(./del) == fish/mine/chop/crack	|
+| 	NumpadAdd(+) == inventory			|
+| 	NumpadEnter == NPC shop				|
+|							|
+|							|
+|-------------------------------------------------------|
+
+		  ~CUSTOMIZE SCRIPT~
+	To disable geode cracking, leave it blank
+	
+padvusr = @username
+geode = `;crack
+
+|-------------------------------------------------------|
+
+
+;	  Don't worry about the stuff below here        ;
+
+
+|-------------------------------------------------------|
 
 ;all
 NumpadDel::
@@ -41,6 +55,12 @@ sleep, 1000
 		Send {enter}
 		SetKeyDelay, -1
 	}
+sleep, 1000
+	{
+		Send %geode%
+		Send {enter}
+		SetKeyDelay, -1
+	}
 return
 
 ;forage
@@ -52,10 +72,12 @@ NumpadIns::
 	}
 return
 
-;unused
+|----------------------------------------------------|
+
+;attributes
 NumpadClear::
 	{
-		Send `;attributes
+		Send `;%attributes%
 		Send {enter}
 		SetKeyDelay, -1
 	}
@@ -147,7 +169,7 @@ return
 ;party adv (edit this!!)
 NumpadSub::
 	{
-		Send `;padv @partners username goes here.
+		Send `;padv +%padvusr%
 		Send {enter}
 		SetKeyDelay, -1
 	}
