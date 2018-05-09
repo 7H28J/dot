@@ -143,3 +143,12 @@ NumpadPgUp::
 		SetKeyDelay, -1
 	}
 return
+
+;party adv (edit this!!)
+NumpadSub::
+	{
+		Send `;padv @partners username goes here.
+		Send {enter}
+		SetKeyDelay, -1
+	}
+return
