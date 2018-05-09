@@ -1,28 +1,26 @@
-;-----------------------------------------------;
-;												;
-; 					KEYBINDS					;
-;					  FOR						;
-;				   DiscordRPG					;
-;												;
-;												;
+;							;
+;							;
+; 			   KEYBINDS			;
+;			     FOR			;
+;			  DiscordRPG			;
+;							;
+;							;
 ; 		NumpadIns(0) == Forage/fish/mine/chop	;
-; 		NumpadEnd(1) == Adv/Battle				;
-; 		NumpadDown(2) == Run					;
-; 		NumpadPgDn(3) == chop					;
-; 		NumpadLeft(4) == forage					;
-; 		NumpadClear(5) == fish					;
-; 		NumpadRight(6) == mine					;
-; 		NumpadHome(7) == location				;
-; 		NumpadUp(8) == map						;
-; 		NumpadPgUp(9) == travel					;
-; 		NumpadDot(./del) == Heal / Pet Heal 	;
-; 		NumpadAdd(+) == inventory				;
-; 		NumpadEnter == NPC shop					;
-;												;
-;												;
-;				DO NOT spam them!			    ;
-;-----------------------------------------------;
-
+; 		NumpadEnd(1) == Adv/Battle		;
+; 		NumpadDown(2) == Run			;
+; 		NumpadPgDn(3) == chop			;
+; 		NumpadLeft(4) == forage			;
+; 		NumpadClear(5) == fish			;
+; 		NumpadRight(6) == mine			;
+; 		NumpadHome(7) == location		;
+; 		NumpadUp(8) == map			;
+; 		NumpadPgUp(9) == travel			;
+; 		NumpadDot(./del) == Heal / Pet Heal	;
+; 		NumpadAdd(+) == inventory		;
+; 		NumpadEnter == NPC shop			;
+;							;
+;							;
+;		      Do NOT spam them!	       		;
 
 ;all
 NumpadIns::
@@ -140,22 +138,8 @@ NumpadDel::
 	}
 sleep, 1000
 	{
-		Send, `;heal auto
+		Send, `;pheal auto
 		Send, {enter}
 		SetKeyDelay, -1
 	}
 return
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
