@@ -5,17 +5,17 @@
 ;			  DiscordRPG			;
 ;							;
 ;							;
-; 		NumpadIns(0) == Forage/fish/mine/chop	;
+; 		NumpadIns(0) == forage			;
 ; 		NumpadEnd(1) == Adv/Battle		;
-; 		NumpadDown(2) == Run			;
-; 		NumpadPgDn(3) == chop			;
-; 		NumpadLeft(4) == forage			;
-; 		NumpadClear(5) == fish			;
-; 		NumpadRight(6) == mine			;
+; 		NumpadDown(2) == Heal+Pet Auto		;
+; 		NumpadPgDn(3) == Run			;
+; 		NumpadLeft(4) == stats			;
+; 		NumpadClear(5) == attributes		;
+; 		NumpadRight(6) == skills		;
 ; 		NumpadHome(7) == location		;
 ; 		NumpadUp(8) == map			;
 ; 		NumpadPgUp(9) == travel			;
-; 		NumpadDot(./del) == Heal / Pet Heal	;
+; 		NumpadDot(./del) == fish/mine/chop	;
 ; 		NumpadAdd(+) == inventory		;
 ; 		NumpadEnter == NPC shop			;
 ;							;
@@ -23,13 +23,7 @@
 ;		      Do NOT spam them!	       		;
 
 ;all
-NumpadIns::
-	{
-		Send `;forage
-		Send {enter}
-		SetKeyDelay, -1
-	}
-sleep, 1000
+NumpadDel::
 	{
 		Send `;fish
 		Send {enter}
@@ -50,7 +44,7 @@ sleep, 1000
 return
 
 ;forage
-NumpadLeft::
+NumpadIns::
 	{
 		Send `;forage
 		Send {enter}
@@ -58,29 +52,44 @@ NumpadLeft::
 	}
 return
 
-;fish
+;unused
 NumpadClear::
 	{
-		Send `;fish
+		Send `;attributes
 		Send {enter}
 		SetKeyDelay, -1
 	}
 return
 
-;mine
+;skills
 NumpadRight::
 	{
-		Send `;mine
+		Send `;skills
 		Send {enter}
 		SetKeyDelay, -1
 	}
 return
 
-;chop
+;stats
+NumpadLeft::
+	{
+		Send `;stats
+		Send {enter}
+		SetKeyDelay, -1
+	}
+return
+
+;run
 NumpadPgDn::
 	{
-		Send `;chop
-		Send {enter}
+		Send, `;adv2
+		Send, {enter}
+		SetKeyDelay, -1
+	}
+sleep, 1000
+	{
+		Send, `;pheal auto
+		Send, {enter}
 		SetKeyDelay, -1
 	}
 return
@@ -94,11 +103,17 @@ NumpadEnd::
 	}
 return
 
-;run
+;heal / pheal
 NumpadDown::
 	{
-		Send `;adv2
-		Send {enter}
+		Send, `;heal auto
+		Send, {enter}
+		SetKeyDelay, -1
+	}
+sleep, 1000
+	{
+		Send, `;pheal auto
+		Send, {enter}
 		SetKeyDelay, -1
 	}
 return
@@ -124,22 +139,7 @@ return
 ;travel
 NumpadPgUp::
 	{
-		Send, `;travel
-		SetKeyDelay, -1
-	}
-return
-
-;heal / pet heal
-NumpadDel::
-	{
-		Send, `;heal auto
-		Send, {enter}
-		SetKeyDelay, -1
-	}
-sleep, 1000
-	{
-		Send, `;pheal auto
-		Send, {enter}
+		Send, `;travel 
 		SetKeyDelay, -1
 	}
 return
