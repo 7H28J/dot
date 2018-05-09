@@ -22,8 +22,8 @@
 ;							;
 ;-------------------------------------------------------;
 
-		  ~CUSTOMIZE SCRIPT~
-	To disable geode cracking, leave it blank
+;		  ~CUSTOMIZE SCRIPT~
+;	To disable geode cracking, leave it blank
 
 padvusr = @username
 geode = `;crack
