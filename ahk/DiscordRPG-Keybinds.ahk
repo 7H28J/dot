@@ -2,7 +2,7 @@
 ;							;
 ; 		     ~KEYBINDS~				;
 ; 		       ~FOR~				;
-;		    ~DiscordRPG~				;
+;		    ~DiscordRPG~			;
 ;							;
 ;							;
 ; 	NumpadIns(0) == forage				;
