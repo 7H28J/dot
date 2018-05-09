@@ -23,9 +23,11 @@
 ;-------------------------------------------------------;
 
 ;		  ~CUSTOMIZE SCRIPT~
+;	   padvusr(2) = party members username
 ;	To disable geode cracking, leave it blank
 
 padvusr = @username
+padvusr2 = @username
 geode = `;crack
 
 
@@ -166,10 +168,19 @@ NumpadPgUp::
 	}
 return
 
-;party adv (edit this!!)
+;party member adv #1
 NumpadSub::
 	{
 		Send `;padv +%padvusr%
+		Send {enter}
+		SetKeyDelay, -1
+	}
+return
+
+;party member adv #2
+NumpadMult::
+	{
+		Send `;padv +%padvusr2%
 		Send {enter}
 		SetKeyDelay, -1
 	}
