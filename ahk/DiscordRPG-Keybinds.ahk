@@ -1,40 +1,40 @@
-|-------------------------------------------------------|
-|							|
-| 		     ~KEYBINDS~				|
-| 		       ~FOR~				|
-|		    ~DiscordRPG~			|
-|							|
-|							|
-| 	NumpadIns(0) == forage				|
-| 	NumpadEnd(1) == Adv/Battle			|
-| 	NumpadDown(2) == Heal+Pet Auto			|
-| 	NumpadPgDn(3) == Run				|
-| 	NumpadLeft(4) == stats				|
-| 	NumpadClear(5) == attributes			|
-| 	NumpadRight(6) == skills			|
-| 	NumpadHome(7) == location			|
-|	NumpadUp(8) == map				|
-| 	NumpadPgUp(9) == travel				|
-| 	NumpadDot(./del) == fish/mine/chop/crack	|
-| 	NumpadAdd(+) == inventory			|
-| 	NumpadEnter == NPC shop				|
-|							|
-|							|
-|-------------------------------------------------------|
+;-------------------------------------------------------;
+;							;
+; 		     ~KEYBINDS~				;
+; 		       ~FOR~				;
+;		    ~DiscordRPG~				;
+;							;
+;							;
+; 	NumpadIns(0) == forage				;
+; 	NumpadEnd(1) == Adv/Battle			;
+; 	NumpadDown(2) == Heal+Pet Auto			;
+; 	NumpadPgDn(3) == Run				;
+; 	NumpadLeft(4) == stats				;
+; 	NumpadClear(5) == attributes			;
+; 	NumpadRight(6) == skills			;
+; 	NumpadHome(7) == location			;
+;	NumpadUp(8) == map				;
+; 	NumpadPgUp(9) == travel				;
+; 	NumpadDot(./del) == fish/mine/chop/crack	;
+; 	NumpadAdd(+) == inventory			;
+; 	NumpadEnter == NPC shop				;
+;							;
+;							;
+;-------------------------------------------------------;
 
 		  ~CUSTOMIZE SCRIPT~
 	To disable geode cracking, leave it blank
-	
+
 padvusr = @username
 geode = `;crack
 
-|-------------------------------------------------------|
 
+;-------------------------------------------------------;
 
-;	  Don't worry about the stuff below here        ;
+;	   Don't worry about the stuff below
 
+;-------------------------------------------------------;
 
-|-------------------------------------------------------|
 
 ;all
 NumpadDel::
@@ -72,12 +72,12 @@ NumpadIns::
 	}
 return
 
-|----------------------------------------------------|
+;-------------------------------------------------------;
 
 ;attributes
 NumpadClear::
 	{
-		Send `;%attributes%
+		Send `;attributes
 		Send {enter}
 		SetKeyDelay, -1
 	}
