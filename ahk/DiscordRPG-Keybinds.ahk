@@ -20,7 +20,7 @@
 ; 		NumpadEnter == NPC shop					;
 ;												;
 ;												;
-;				Do NOT spam them!			    ;
+;				DO NOT spam them!			    ;
 ;-----------------------------------------------;
 
 
